@@ -1,0 +1,54 @@
+---
+import Section from "../Section.astro";
+import { certificates } from "@cv";
+---
+
+<Section title="Certificados y Cursos">
+  <ul>
+    {
+      [...certificates]
+        .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+        .map(({ name, issuer, date, url }) => {
+          return (
+            <li>
+              <article>
+                <header>
+                  <div>
+                    <a href={url} target="_blank" rel="noopener noreferrer">
+                      <h3>{name}</h3>
+                    </a>
+                  </div>
+                  <time>{date}</time>
+                </header>
+                <footer>
+                  <p>{issuer}</p>
+                </footer>
+              </article>
+            </li>
+          );
+        })
+    }
+  </ul>
+</Section>
+
+<style>
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 4px;
+  }
+  header h3 {
+    text-decoration: underline;
+  }
+  time {
+    color: #555;
+    font-size: 0.85rem;
+  }
+</style>

@@ -1,0 +1,393 @@
+{
+  "basics": {
+    "name": "Edder Ramírez",
+    "label": "FullStack Developer con Python",
+    "image": "/avatar.webp",
+    "email": "edderleonardo@gmail.com",
+    "phone": "+52 9997052986",
+    "url": "",
+    "summary": "<p style='margin-bottom:5px' id='about' class='about'>Me apasiona el aprendizaje continuo y me esfuerzo por mejorar mis habilidades constantemente, cuento con +5 años de experiencia como FullStack developer, con experiencia en el desarrollo web utilizando tecnologias como Python y Django.<br/> Mi enfoque principal se centra en la creación de aplicaciones robustas y escalables, con un énfasis en la usabilidad y la experiencia del usuario.</p>",
+    "location": {
+      "address": "",
+      "postalCode": "24000",
+      "city": "Campeche",
+      "countryCode": "MX",
+      "region": "México"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "edderleonardo",
+        "url": "https://www.linkedin.com/in/edderleonardo/"
+      },
+      {
+        "network": "GitHub",
+        "username": "edderleonardo",
+        "url": "https://github.com/edderleonardo"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Destácame",
+      "position": "FullStack Developer",
+      "url": "https://www.destacame.cl/",
+      "startDate": "2021",
+      "endDate": "2023",
+      "summary": "Colaboré en la empresa como FullStack Developer, donde mantuve y añadí nuevas funcionalidades al producto de la compañía. Mi labor se centró en garantizar un desarrollo integral, abarcando tanto el frontend como el backend, con el objetivo de optimizar y enriquecer constantemente nuestro producto.",
+      "highlights": [
+        "Started the company"
+      ]
+    },
+    {
+      "name": "Alluxi",
+      "position": "FullStack Developer",
+      "url": "https://www.alluxi.com/es/",
+      "startDate": "2020",
+      "endDate": "2021",
+      "summary": "Colaboré en la empresa como desarrollador web, encargándome del mantenimiento y la implementación de nuevas funcionalidades en los sistemas ya existentes.",
+      "highlights": [
+        "Started the company"
+      ]
+    },
+    {
+      "name": "Klatus",
+      "position": "Soporte de Aplicaciones",
+      "url": "https://klatus.com/",
+      "startDate": "2019",
+      "endDate": "2020",
+      "summary": "Desempeñé funciones como soporte de aplicaciones en la empresa, brindando asistencia a diversos sistemas previamente desarrollados y entregados. Además, incorporaba nuevas funcionalidades según las necesidades específicas.",
+      "highlights": [
+        "Started the company"
+      ]
+    },
+    {
+      "name": "Evient",
+      "position": "Django Developer",
+      "url": "https://evient.mx/",
+      "startDate": "2019",
+      "endDate": "2020",
+      "summary": "Participé como Backend Developer en la empresa, brindando apoyo a los sistemas existentes, corrigiendo módulos y añadiendo nuevas funcionalidades para mejorar su rendimiento",
+      "highlights": [
+        "Started the company"
+      ]
+    },
+    {
+      "name": "Vordem Software",
+      "position": "Django Developer",
+      "url": "https://vordem.io/",
+      "startDate": "2018",
+      "endDate": "2019",
+      "summary": "Me desempeñé como desarrollador Django en la empresa, brindando apoyo y soporte a diversos sistemas creados para clientes. Además, inicié mi colaboración en el desarrollo interno de un producto.",
+      "highlights": [
+        "Started the company"
+      ]
+    }
+  ],
+  "volunteer": [{
+    "organization": "Organization",
+    "position": "Volunteer",
+    "url": "https://organization.com/",
+    "startDate": "2012-01-01",
+    "endDate": "2013-01-01",
+    "summary": "Description…",
+    "highlights": [
+      "Awarded 'Volunteer of the Month'"
+    ]
+  }],
+  "education": [{
+    "institution": "Universidad Interamericana para el desarrollo (UNID)",
+    "url": "https://www.unid.edu.mx/",
+    "area": "Ingeniería en Sistemas de Información",
+    "studyType": "Bachelor",
+    "startDate": "2011",
+    "endDate": "2013",
+    "score": "4.0",
+    "courses": [
+      "DB1101 - Basic SQL"
+    ]
+  }],
+  "awards": [{
+    "title": "Award",
+    "date": "2014-11-01",
+    "awarder": "Company",
+    "summary": "There is no spoon."
+  }],
+  "certificates": [
+    {
+      "name": "The Complete Guide to Django REST Framework and Vue JS",
+      "date": "2021",
+      "issuer": "Udemy",
+      "url": "https://www.udemy.com/certificate/UC-3b1b118f-7c40-4717-bdcd-401f2abbc296/"
+    },
+    {
+      "name": "FastAPI - The Complete Course 2023 (Beginner + Advanced)",
+      "date": "2023",
+      "issuer": "Udemy",
+      "url": "https://www.udemy.com/certificate/UC-77bbee62-83a6-4030-b256-c1769990fe4b/"
+    },
+    {
+      "name": "Curso Maestro de Python: De Cero a Programador Todoterreno",
+      "date": "2017",
+      "issuer": "Udemy",
+      "url": "https://www.udemy.com/certificate/UC-PNX1YE52/"
+    },
+    {
+      "name": "Python and Django Full Stack Web Developer Bootcamp",
+      "date": "2017",
+      "issuer": "Udemy",
+      "url": "https://www.udemy.com/certificate/UC-KQH47AOI/"
+    },
+    {
+      "name": "PROBAR DJANGO",
+      "date": "2018",
+      "issuer": "Udemy",
+      "url": "https://www.udemy.com/certificate/UC-TL7Z38EO/"
+    },
+    {
+      "name": "Build a Backend REST API with Python & Django - Beginner",
+      "date": "2018",
+      "issuer": "Udemy",
+      "url": "https://www.udemy.com/certificate/UC-W97VRB4E/"
+    },
+    {
+      "name": "React JS - Curso de introducción desde cero y primeros pasos",
+      "date": "2019",
+      "issuer": "Udemy",
+      "url": "https://www.udemy.com/certificate/UC-7WXM3CZ7/"
+    },
+    {
+      "name": "Build a Backend REST API with Python & Django - Advanced",
+      "date": "2020",
+      "issuer": "Udemy",
+      "url": "https://www.udemy.com/certificate/UC-IRBF1VKI/"
+    },
+    {
+      "name": "Aprende a crear proyectos SaaS con Django Tenant/PostGreSQL",
+      "date": "2020",
+      "issuer": "Udemy",
+      "url": "https://www.udemy.com/certificate/UC-cbaf5b7f-f1e5-4a78-8181-6e3e4c27aff7/"
+    },
+    {
+      "name": "Test-Driven Development in Django",
+      "date": "2020",
+      "issuer": "LinkedIn Learning",
+      "url": "https://www.linkedin.com/learning/certificates/ebadffd5ed9026f9781a9f7a7fb72e868ea2dce839455d79a24a68d1c0236863"
+    },
+    {
+      "name": "Building RESTful Web APIs with Django",
+      "date": "2021",
+      "issuer": "LinkedIn Learning",
+      "url": "https://www.linkedin.com/learning/certificates/4c55a3ee05a49f763e35740ee9ce7cfa4e8defb4395470a6471ac1baef17cf5d"
+    },
+    {
+      "name": "AWS Partner: Accreditation (Technical)",
+      "date": "2021",
+      "issuer": "Amazon Web Services Training and Certification",
+      "url": "https://www.credly.com/badges/60116fa6-f0b7-41cd-8bd0-0940e768a67e?source=linked_in_profile"
+    },
+    {
+      "name": "Python Avanzado",
+      "date": "2022",
+      "issuer": "LinkedIn Learning",
+      "url": "https://www.linkedin.com/learning/certificates/b04586a9cf10355556c60b0c581b91409110ec14faf803961ed3399fd21d04b0?u=89909618"
+    },
+    {
+      "name": "Cómo desarrollar la inteligencia emocional",
+      "date": "2022",
+      "issuer": "LinkedIn Learning",
+      "url": "https://www.linkedin.com/learning/certificates/a50ebc0c0cb662a4977427e1c8c7b5428d40b1b69410231630fa165012506409"
+    },
+    {
+      "name": "English for Developers & IT Professionals",
+      "date": "2024",
+      "issuer": "LinkedIn Learning",
+      "url": "https://cursos.desafiolatam.com/certificates/fk01c5y2be"
+    },
+    {
+      "name": "Nuxt js: aplicaciones universales con vue js",
+      "date": "2023",
+      "issuer": "Udemy",
+      "url": "https://www.udemy.com/certificate/UC-1c224aae-ad4f-4103-9cdd-e780ede981e6/"
+    }
+  ],
+  "publications": [{
+    "name": "Publication",
+    "publisher": "Company",
+    "releaseDate": "2014-10-01",
+    "url": "https://publication.com",
+    "summary": "Description…"
+  }],
+  "skills": [
+    {
+      "name": "HTML",
+      "level": "Master",
+      "keywords": [
+        "Desarrollo Web", "Frontend"
+      ]
+    },
+    {
+      "name": "CSS",
+      "level": "Master",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "Diseño Responsive"
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "level": "Master",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "Backend", "Fullstack"
+      ]
+    },
+    {
+      "name": "Tailwind",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "CSS Framework", "Diseño Responsive"
+      ]
+    },
+    {
+      "name": "Vue",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "JavaScript Library", "UI"
+      ]
+    },
+    {
+      "name": "React",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "JavaScript Library", "UI"
+      ]
+    },
+    {
+      "name": "Git",
+      "level": "Avanzado",
+      "keywords": [
+        "Control de Versiones", "Colaboración", "Código Fuente"
+      ]
+    },
+    {
+      "name": "GitHub",
+      "level": "Avanzado",
+      "keywords": [
+        "Control de Versiones", "Colaboración", "Código Fuente", "Git"
+      ]
+    },
+    {
+      "name": "Python",
+      "level": "Avanzado",
+      "keywords": [
+        "Bases de Datos", "SQL", "Almacenamiento de Datos", "Backend"
+      ]
+    },
+    {
+      "name": "Django",
+      "level": "Avanzado",
+      "keywords": [
+        "Bases de Datos", "SQL", "Almacenamiento de Datos", "Backend"
+      ]
+    },
+    {
+      "name": "FastAPI",
+      "level": "Avanzado",
+      "keywords": [
+        "Bases de Datos", "SQL", "Almacenamiento de Datos", "Backend"
+      ]
+    },
+    {
+      "name": "Flask",
+      "level": "Avanzado",
+      "keywords": [
+        "Bases de Datos", "SQL", "Almacenamiento de Datos", "Backend"
+      ]
+    },
+    {
+      "name": "MySQL",
+      "level": "Avanzado",
+      "keywords": [
+        "Bases de Datos", "SQL", "Almacenamiento de Datos", "Backend"
+      ]
+    },
+    {
+      "name": "Postgres",
+      "level": "Avanzado",
+      "keywords": [
+        "Bases de Datos", "SQL", "Almacenamiento de Datos", "Backend"
+      ]
+    },
+    {
+      "name": "AWS",
+      "level": "Avanzado",
+      "keywords": [
+        "Bases de Datos", "SQL", "Almacenamiento de Datos", "Backend"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "Advanced"
+    }
+  ],
+  "interests": [{
+    "name": "Wildlife",
+    "keywords": [
+      "Ferrets",
+      "Unicorns"
+    ]
+  }],
+  "references": [{
+    "name": "Jane Doe",
+    "reference": "Reference…"
+  }],
+  "projects": [
+    {
+      "name": "Virginia Moon",
+      "isActive": true,
+      "description": "Tienda online de ropa y accesorios para mujer",
+      "github": "",
+      "highlights": [],
+      "url": "https://virginiamoon.mx/"
+    },
+    {
+      "name": "UmafeIP",
+      "isActive": true,
+      "description": "Página web y sistema de expendiete clínico para un consultorio médico en Campeche, México.",
+      "highlights": [],
+      "url": "http://umafeip.com/"
+    },
+    {
+      "name": "Eventy",
+      "isActive": true,
+      "description": "Sistema que ayuda a gestionar invitaciones de eventos sociales.",
+      "agency": ["Alluxi"],
+      "highlights": [],
+      "url": "https://eventy.mx/accounts/login/?next=/"
+    },
+    {
+      "name": "Se buscan proveedores",
+      "isActive": true,
+      "description": "Plataforma que ayuda a conectar a proveedores con clientes y viceversa en México",
+      "agency": ["Vordem Software"],
+      "highlights": [],
+      "url": "https://sebuscanproveedores.com/"
+    },
+    {
+      "name": "Historial Clínico",
+      "isActive": true,
+      "description": "Sistema de expediente clínico para consultorios médicos",
+      "highlights": [
+        "En desarrollo"
+      ],
+      "url": "https://sebuscanproveedores.com/"
+    }
+  ],
+  "sun": "/sun.png",
+  "moon": "/moon.png"
+}
