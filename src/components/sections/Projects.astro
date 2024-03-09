@@ -14,7 +14,7 @@ import { projects } from "@cv";
             <li>
               <article>
                 <header>
-                  <h3>
+                  <h3 class="text-gray-900 dark:text-white">
                     <a
                       href={url}
                       target="_blank"
@@ -34,7 +34,7 @@ import { projects } from "@cv";
                       </a>
                     )}
                   </h3>
-                  <p>{description}</p>
+                  <p class="text-gray-950 dark:text-white">{description}</p>
                 </header>
                 <footer>
                   {agency && <span>Realizado en: {agency}</span>}
@@ -75,10 +75,6 @@ import { projects } from "@cv";
 
   article h3 {
     margin-bottom: 4px;
-  }
-
-  article a {
-    color: #111;
   }
 
   article a:hover {
@@ -137,9 +133,9 @@ import { projects } from "@cv";
     }
 
     article {
-      border: none;
+      /* border: none; */
       box-shadow: 0 1px 1px #f2f2f2;
-      padding: 0 0 16px 0;
+      /* padding: 0 0 16px 0; */
     }
   }
 

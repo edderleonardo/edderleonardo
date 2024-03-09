@@ -8,12 +8,13 @@ import Certificates from "@/components/sections/Certificates.astro"
 import Projects from "@/components/sections/Projects.astro"
 import Skills from "@/components/sections/Skills.astro"
 import KeyboardManager from "@/components/KeyboardManager.astro"
-
+import UserPreferences from "@/components/UserPreferences.astro"
 import { basics } from "@cv"
 const { name, label } = basics
 ---
 
 <Layout title={`Portafolio de ${name} - ${label}`}>
+  <UserPreferences/>
   <main>
     <Hero />
     <About />

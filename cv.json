@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Edder Ramírez",
-    "label": "FullStack Developer con Python",
+    "label": "Python FullStack Developer",
     "image": "/avatar.webp",
     "email": "edderleonardo@gmail.com",
     "phone": "+52 9997052986",
     "url": "",
-    "summary": "<p style='margin-bottom:5px' id='about' class='about'>Me apasiona el aprendizaje continuo y me esfuerzo por mejorar mis habilidades constantemente, cuento con +5 años de experiencia como FullStack developer utilizando tecnologias como Python y Django.<br/> Mi enfoque principal se centra en la creación de aplicaciones robustas y escalables, con un énfasis en la usabilidad y la experiencia del usuario.</p>",
+    "summary": "<p class='text-gray-600 dark:text-slate-50' style='margin-bottom:10px'>Me apasiona el aprendizaje continuo y me esfuerzo por mejorar mis habilidades constantemente, cuento con +5 años de experiencia como FullStack developer utilizando tecnologias como Python y Django.</p> <p class='text-gray-600 dark:text-slate-50'>Mi enfoque principal se centra en la creación de aplicaciones robustas y escalables, con un énfasis en la usabilidad y la experiencia del usuario.</p>",
     "location": {
       "address": "",
       "postalCode": "24000",
@@ -35,9 +35,7 @@
       "startDate": "2021",
       "endDate": "2023",
       "summary": "Colaboré en la empresa como FullStack Developer, donde mantuve y añadí nuevas funcionalidades al producto de la compañía. Mi labor se centró en garantizar un desarrollo integral, abarcando tanto el frontend como el backend, con el objetivo de optimizar y enriquecer constantemente nuestro producto.",
-      "highlights": [
-        "Started the company"
-      ]
+      "highlights": ["Started the company"]
     },
     {
       "name": "Alluxi",
@@ -46,9 +44,7 @@
       "startDate": "2020",
       "endDate": "2021",
       "summary": "Colaboré en la empresa como desarrollador web, encargándome del mantenimiento y la implementación de nuevas funcionalidades en los sistemas ya existentes.",
-      "highlights": [
-        "Started the company"
-      ]
+      "highlights": ["Started the company"]
     },
     {
       "name": "Klatus",
@@ -57,9 +53,7 @@
       "startDate": "2019",
       "endDate": "2020",
       "summary": "Desempeñé funciones como soporte de aplicaciones en la empresa, brindando asistencia a diversos sistemas previamente desarrollados y entregados. Además, incorporaba nuevas funcionalidades según las necesidades específicas.",
-      "highlights": [
-        "Started the company"
-      ]
+      "highlights": ["Started the company"]
     },
     {
       "name": "Evient",
@@ -68,9 +62,7 @@
       "startDate": "2019",
       "endDate": "2020",
       "summary": "Participé como Backend Developer en la empresa, brindando apoyo a los sistemas existentes, corrigiendo módulos y añadiendo nuevas funcionalidades para mejorar su rendimiento",
-      "highlights": [
-        "Started the company"
-      ]
+      "highlights": ["Started the company"]
     },
     {
       "name": "Vordem Software",
@@ -79,40 +71,40 @@
       "startDate": "2018",
       "endDate": "2019",
       "summary": "Me desempeñé como desarrollador Django en la empresa, brindando apoyo y soporte a diversos sistemas creados para clientes. Además, inicié mi colaboración en el desarrollo interno de un producto.",
-      "highlights": [
-        "Started the company"
-      ]
+      "highlights": ["Started the company"]
     }
   ],
-  "volunteer": [{
-    "organization": "Organization",
-    "position": "Volunteer",
-    "url": "https://organization.com/",
-    "startDate": "2012-01-01",
-    "endDate": "2013-01-01",
-    "summary": "Description…",
-    "highlights": [
-      "Awarded 'Volunteer of the Month'"
-    ]
-  }],
-  "education": [{
-    "institution": "Universidad Interamericana para el desarrollo (UNID)",
-    "url": "https://www.unid.edu.mx/",
-    "area": "Ingeniería en Sistemas de Información",
-    "studyType": "Bachelor",
-    "startDate": "2011",
-    "endDate": "2013",
-    "score": "4.0",
-    "courses": [
-      "DB1101 - Basic SQL"
-    ]
-  }],
-  "awards": [{
-    "title": "Award",
-    "date": "2014-11-01",
-    "awarder": "Company",
-    "summary": "There is no spoon."
-  }],
+  "volunteer": [
+    {
+      "organization": "Organization",
+      "position": "Volunteer",
+      "url": "https://organization.com/",
+      "startDate": "2012-01-01",
+      "endDate": "2013-01-01",
+      "summary": "Description…",
+      "highlights": ["Awarded 'Volunteer of the Month'"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universidad Interamericana para el desarrollo (UNID)",
+      "url": "https://www.unid.edu.mx/",
+      "area": "Ingeniería en Sistemas de Información",
+      "studyType": "Bachelor",
+      "startDate": "2011",
+      "endDate": "2013",
+      "score": "4.0",
+      "courses": ["DB1101 - Basic SQL"]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Award",
+      "date": "2014-11-01",
+      "awarder": "Company",
+      "summary": "There is no spoon."
+    }
+  ],
   "certificates": [
     {
       "name": "The Complete Guide to Django REST Framework and Vue JS",
@@ -211,117 +203,139 @@
       "url": "https://www.udemy.com/certificate/UC-1c224aae-ad4f-4103-9cdd-e780ede981e6/"
     }
   ],
-  "publications": [{
-    "name": "Publication",
-    "publisher": "Company",
-    "releaseDate": "2014-10-01",
-    "url": "https://publication.com",
-    "summary": "Description…"
-  }],
+  "publications": [
+    {
+      "name": "Publication",
+      "publisher": "Company",
+      "releaseDate": "2014-10-01",
+      "url": "https://publication.com",
+      "summary": "Description…"
+    }
+  ],
   "skills": [
     {
       "name": "HTML",
       "level": "Master",
-      "keywords": [
-        "Desarrollo Web", "Frontend"
-      ]
+      "keywords": ["Desarrollo Web", "Frontend"]
     },
     {
       "name": "CSS",
       "level": "Master",
-      "keywords": [
-        "Desarrollo Web", "Frontend", "Diseño Responsive"
-      ]
+      "keywords": ["Desarrollo Web", "Frontend", "Diseño Responsive"]
     },
     {
       "name": "JavaScript",
       "level": "Master",
-      "keywords": [
-        "Desarrollo Web", "Frontend", "Backend", "Fullstack"
-      ]
+      "keywords": ["Desarrollo Web", "Frontend", "Backend", "Fullstack"]
     },
     {
       "name": "Tailwind",
       "level": "Avanzado",
       "keywords": [
-        "Desarrollo Web", "Frontend", "CSS Framework", "Diseño Responsive"
+        "Desarrollo Web",
+        "Frontend",
+        "CSS Framework",
+        "Diseño Responsive"
       ]
     },
     {
       "name": "Vue",
       "level": "Avanzado",
-      "keywords": [
-        "Desarrollo Web", "Frontend", "JavaScript Library", "UI"
-      ]
+      "keywords": ["Desarrollo Web", "Frontend", "JavaScript Library", "UI"]
     },
     {
       "name": "React",
       "level": "Avanzado",
-      "keywords": [
-        "Desarrollo Web", "Frontend", "JavaScript Library", "UI"
-      ]
+      "keywords": ["Desarrollo Web", "Frontend", "JavaScript Library", "UI"]
+    },
+    {
+      "name": "astro",
+      "level": "Avanzado",
+      "keywords": []
     },
     {
       "name": "Git",
       "level": "Avanzado",
-      "keywords": [
-        "Control de Versiones", "Colaboración", "Código Fuente"
-      ]
+      "keywords": ["Control de Versiones", "Colaboración", "Código Fuente"]
     },
     {
       "name": "GitHub",
       "level": "Avanzado",
       "keywords": [
-        "Control de Versiones", "Colaboración", "Código Fuente", "Git"
+        "Control de Versiones",
+        "Colaboración",
+        "Código Fuente",
+        "Git"
       ]
     },
     {
       "name": "Python",
       "level": "Avanzado",
       "keywords": [
-        "Bases de Datos", "SQL", "Almacenamiento de Datos", "Backend"
+        "Bases de Datos",
+        "SQL",
+        "Almacenamiento de Datos",
+        "Backend"
       ]
     },
     {
       "name": "Django",
       "level": "Avanzado",
       "keywords": [
-        "Bases de Datos", "SQL", "Almacenamiento de Datos", "Backend"
+        "Bases de Datos",
+        "SQL",
+        "Almacenamiento de Datos",
+        "Backend"
       ]
     },
     {
       "name": "FastAPI",
       "level": "Avanzado",
       "keywords": [
-        "Bases de Datos", "SQL", "Almacenamiento de Datos", "Backend"
+        "Bases de Datos",
+        "SQL",
+        "Almacenamiento de Datos",
+        "Backend"
       ]
     },
     {
       "name": "Flask",
       "level": "Avanzado",
       "keywords": [
-        "Bases de Datos", "SQL", "Almacenamiento de Datos", "Backend"
+        "Bases de Datos",
+        "SQL",
+        "Almacenamiento de Datos",
+        "Backend"
       ]
     },
     {
       "name": "MySQL",
       "level": "Avanzado",
       "keywords": [
-        "Bases de Datos", "SQL", "Almacenamiento de Datos", "Backend"
+        "Bases de Datos",
+        "SQL",
+        "Almacenamiento de Datos",
+        "Backend"
       ]
     },
     {
       "name": "Postgres",
       "level": "Avanzado",
       "keywords": [
-        "Bases de Datos", "SQL", "Almacenamiento de Datos", "Backend"
+        "Bases de Datos",
+        "SQL",
+        "Almacenamiento de Datos",
+        "Backend"
       ]
     },
     {
       "name": "AWS",
       "level": "Avanzado",
       "keywords": [
-        "Bases de Datos", "SQL", "Almacenamiento de Datos", "Backend"
+        "Bases de Datos",
+        "SQL",
+        "Almacenamiento de Datos",
+        "Backend"
       ]
     }
   ],
@@ -335,17 +349,18 @@
       "fluency": "Advanced"
     }
   ],
-  "interests": [{
-    "name": "Wildlife",
-    "keywords": [
-      "Ferrets",
-      "Unicorns"
-    ]
-  }],
-  "references": [{
-    "name": "Jane Doe",
-    "reference": "Reference…"
-  }],
+  "interests": [
+    {
+      "name": "Wildlife",
+      "keywords": ["Ferrets", "Unicorns"]
+    }
+  ],
+  "references": [
+    {
+      "name": "Jane Doe",
+      "reference": "Reference…"
+    }
+  ],
   "projects": [
     {
       "name": "Virginia Moon",
@@ -382,12 +397,8 @@
       "name": "Historial Clínico",
       "isActive": true,
       "description": "Sistema de expediente clínico para consultorios médicos",
-      "highlights": [
-        "En desarrollo"
-      ],
+      "highlights": ["En desarrollo"],
       "url": "https://sebuscanproveedores.com/"
     }
-  ],
-  "sun": "/sun.png",
-  "moon": "/moon.png"
+  ]
 }

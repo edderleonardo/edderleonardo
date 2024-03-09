@@ -1,26 +1,19 @@
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 
 export const DarkMode = () => {
-  
-  const [darkMode, setDarkMode] = useState();
-
+  const [darkMode, setDarkMode] = useState()
 
   useEffect(() => {
-    localStorage.setItem('darkMode', true);
-  });
+    const htmlElement = document.documentElement;
+    htmlElement.classList.toggle("dark", darkMode);
+    }, [darkMode]);
 
   const handleDarkMode = () => {
-    console.log("darkMode", darkMode);
     setDarkMode(!darkMode);
-    if (!darkMode) {
-      localStorage.setItem('darkMode', false);
-    } else {
-      localStorage.setItem('darkMode', true);
-    }
   };
 
   const buttonStyle = {
-    fontSize: "30px"
+    fontSize: "30px",
   };
 
   return (
@@ -30,5 +23,4 @@ export const DarkMode = () => {
       </button>
     </div>
   );
-}
-
+};
