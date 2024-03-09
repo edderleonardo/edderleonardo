@@ -27,9 +27,9 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
 <Section>
   <div class="container">
     <div class="info">
-      <h1>{name}</h1>
-      <h2 id="position" class="position">{label}</h2>
-      <span id="location" class="location">
+      <h1 class="text-black dark:text-slate-50">{name}</h1>
+      <h2 class="text-zinc-500 dark:text-slate-50">{label}</h2>
+      <span class="text-zinc-600 dark:text-slate-50">
         <WorldMap />
         {city}, {region}
       </span>

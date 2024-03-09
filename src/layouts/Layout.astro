@@ -11,7 +11,7 @@ const { image, summary, url } = basics;
 ---
 
 <!doctype html>
-<html lang="es">
+<html lang="es" class="dark">
   <head>
     <meta charset="UTF-8" />
     <title>{title}</title>
@@ -33,7 +33,7 @@ const { image, summary, url } = basics;
     <meta name="twitter:description" content={summary} />
     <meta name="twitter:image" content="" />
   </head>
-  <body>
+  <body class="bg-white dark:bg-slate-900">
     <slot />
   </body>
 </html>
@@ -47,7 +47,6 @@ const { image, summary, url } = basics;
       "Courier New",
       Courier,
       monospace;
-    background: #fff;
     letter-spacing: -0.025rem;
   }
 
@@ -104,25 +103,16 @@ const { image, summary, url } = basics;
     display: none !important;
   }
 
-  .position {
-    color: #444;
-  }
   .location {
     color: hsl(0, 0%, 40%);
   }
-  .about {
-    color: #666;
-  }
+
   .font-light {
     color: #fafafa !important;
   }
 
   .icons {
     color: #777;
-  }
-
-  .summary {
-    color: #666;
   }
 
   @media print {

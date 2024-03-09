@@ -15,14 +15,14 @@ import { education } from "@cv";
             <article>
               <header>
                 <div>
-                  <h3>{institution}</h3>
+                  <h3 class="text-gray-900 dark:text-white">{institution}</h3>
                 </div>
 
-                <time>{years}</time>
+                <time class="text-gray-900 dark:text-white">{years}</time>
               </header>
 
               <footer>
-                <p>{area}</p>
+                <p class="text-gray-950 dark:text-white">{area}</p>
               </footer>
             </article>
           </li>
@@ -41,7 +41,6 @@ import { education } from "@cv";
 
   article h3 {
     font-weight: 500;
-    color: #111;
   }
 
   header {
@@ -52,9 +51,7 @@ import { education } from "@cv";
   }
 
   time {
-    color: #555;
     font-size: 0.85rem;
-    /* min-width: 102px; */
   }
 
   @media (width <= 700px) {
