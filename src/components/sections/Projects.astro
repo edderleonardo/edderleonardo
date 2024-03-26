@@ -15,13 +15,17 @@ import { projects } from "@cv";
               <article>
                 <header>
                   <h3 class="text-gray-900 dark:text-white">
-                    <a
-                      href={url}
-                      target="_blank"
-                      title={`Ver el proyecto ${name}`}
-                    >
-                      {name}
-                    </a>
+                    {url ? (
+                      <a
+                        href={url}
+                        target="_blank"
+                        title={`Ver el proyecto ${name}`}
+                      >
+                        {name}
+                      </a>
+                    ) : (
+                      name
+                    )}
                     {isActive && <span>•</span>}
                     {github && (
                       <a
