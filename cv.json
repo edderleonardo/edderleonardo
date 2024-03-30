@@ -367,37 +367,37 @@
       "isActive": true,
       "description": "Tienda online de ropa y accesorios para mujer",
       "github": "",
-      "highlights": [],
+      "highlights": ["HTML", "CSS", "JavaScript"],
       "url": "https://virginiamoon.mx/"
     },
     {
       "name": "UmafeIP",
       "isActive": true,
       "description": "Página web y sistema de expediente clínico para un consultorio médico en Campeche, México.",
-      "highlights": [],
+      "highlights": ["HTML", "CSS", "JavaScript", "Python", "Django"],
       "url": "http://umafeip.com/"
     },
     {
       "name": "Eventy",
       "isActive": true,
-      "description": "Sistema que ayuda a gestionar invitaciones de eventos sociales.",
+      "description": "Sistema que ayuda a gestionar invitaciones de eventos sociales. Realizado en Agencia Alluxi.",
       "agency": ["Alluxi"],
-      "highlights": [],
+      "highlights": ["HTML", "CSS", "JavaScript", "Vue", "Python", "Django", "DRF", "SASS", "Docker"],
       "url": "https://eventy.mx/accounts/login/?next=/"
     },
     {
       "name": "Se buscan proveedores",
       "isActive": true,
-      "description": "Plataforma que ayuda a conectar a proveedores con clientes y viceversa en México",
+      "description": "Plataforma que ayuda a conectar a proveedores con clientes y viceversa en México. Realizado en Agencia Vordem Software.",
       "agency": ["Vordem Software"],
-      "highlights": [],
+      "highlights": ["HTML", "CSS", "JavaScript", "Python", "Django", "DRF"],
       "url": "https://sebuscanproveedores.com/"
     },
     {
       "name": "Historial Clínico",
-      "isActive": true,
+      "isActive": false,
       "description": "Sistema de expediente clínico para consultorios médicos",
-      "highlights": ["En desarrollo"],
+      "highlights": ["REACT", "FastAPI", "Astro", "Docker"],
       "url": ""
     }
   ]

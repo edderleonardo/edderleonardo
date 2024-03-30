@@ -9,7 +9,7 @@ import { projects } from "@cv";
   <ul>
     {
       projects.map(
-        ({ url, description, highlights, name, isActive, github, agency }) => {
+        ({ url, description, highlights, name, isActive, github, }) => {
           return (
             <li>
               <article>
@@ -41,10 +41,11 @@ import { projects } from "@cv";
                   <p class="text-gray-950 dark:text-white">{description}</p>
                 </header>
                 <footer>
-                  {agency && <span>Realizado en: {agency}</span>}
-                  {highlights.map((highlight) => {
-                    return <span>{highlight}</span>;
-                  })}
+                  <div class="highlight">
+                    {highlights.map((highlight) => {
+                      return <span class=" bg-zinc-100 text-dark">{highlight}</span>;
+                    })}
+                  </div>
                 </footer>
               </article>
             </li>
@@ -100,19 +101,22 @@ import { projects } from "@cv";
   }
 
   footer {
-    display: flex;
-    flex-wrap: wrap;
     gap: 4px;
     font-size: 0.6rem;
   }
 
   footer span {
     border-radius: 6px;
-    background: #eee;
-    color: #444;
     font-size: 0.6rem;
     font-weight: 500;
     padding: 0.2rem 0.6rem;
+  }
+
+  .highlight {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    border-radius: 6px;
   }
 
   .github-code-link {
