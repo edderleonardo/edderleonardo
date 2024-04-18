@@ -9,6 +9,7 @@ import Projects from "@/components/sections/Projects.astro"
 import Skills from "@/components/sections/Skills.astro"
 import KeyboardManager from "@/components/KeyboardManager.astro"
 import UserPreferences from "@/components/UserPreferences.astro"
+import Strengths from "@/components/sections/Strengths.astro"
 import { basics } from "@cv"
 const { name, label } = basics
 ---
@@ -23,9 +24,9 @@ const { name, label } = basics
     <Certificates />
     <Projects />
     <Skills />
+    <Strengths />
   </main>
 
-  <KeyboardManager />
 </Layout>
 
 <style>

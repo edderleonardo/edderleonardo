@@ -6,7 +6,7 @@
     "email": "edderleonardo@gmail.com",
     "phone": "+52 9997052986",
     "url": "",
-    "summary": "<p class='text-gray-600 dark:text-slate-50' style='margin-bottom:10px'>Me apasiona el aprendizaje continuo y me esfuerzo por mejorar mis habilidades constantemente, cuento con +5 años de experiencia como FullStack developer utilizando tecnologías como Python y Django.</p> <p class='text-gray-600 dark:text-slate-50'>Mi enfoque principal se centra en la creación de aplicaciones robustas y escalables, con un énfasis en la usabilidad y la experiencia del usuario.</p>",
+    "summary": "<p class='text-gray-600 dark:text-slate-50' style='margin-bottom:10px'>Me apasiona el aprendizaje continuo y me esfuerzo por mejorar mis habilidades constantemente. Tengo una amplia experiencia en Python y frameworks como Django, lo que me ha permitido desarrollar soluciones eficientes y escalables para diversos proyectos.</p>",
     "location": {
       "address": "",
       "postalCode": "24000",
@@ -35,7 +35,13 @@
       "startDate": "2021",
       "endDate": "2023",
       "summary": "Colaboré en la empresa como FullStack Developer, donde mantuve y añadí nuevas funcionalidades al producto de la compañía. Mi labor se centró en garantizar un desarrollo integral, abarcando tanto el frontend como el backend, con el objetivo de optimizar y enriquecer constantemente nuestro producto.",
-      "highlights": ["Started the company"]
+      "highlights": [
+        "Orqueste la integración de APIs de instituciones financieras como Vexi, Financiera Independencia, CuraDeuda, Creditea, Escampa, Amicar; enriqueciendo significativamente el catálogo de productos disponible para los usuarios en la plataforma.",
+        "Trabajé en el diseño y optimización de la interfaz de usuario para los informes de buró de crédito, con el objetivo de hacerla más clara y fácil de usar para nuestros usuarios finales, mejorando así la claridad y la usabilidad de la interfaz.",
+        "Implemente soluciones innovadoras que redujeron drásticamente los errores en la generación de informes de buró de crédito, mejorando la precisión del proceso en un 90%.",
+        "Revolucioné la experiencia de usuario mediante mejoras intuitivas en la navegación de nuestra plataforma, lo que resultó en un aumento notable en la accesibilidad y la eficiencia.",
+        "Creé una página de destino para ayudar a los usuarios a pagar sus deudas vencidas, la cual fue utilizada por más de 47,000 personas."
+      ]
     },
     {
       "name": "Alluxi",
@@ -44,7 +50,12 @@
       "startDate": "2020",
       "endDate": "2021",
       "summary": "Colaboré en la empresa como desarrollador web, encargándome del mantenimiento y la implementación de nuevas funcionalidades en los sistemas ya existentes.",
-      "highlights": ["Started the company"]
+      "highlights": [
+        "Me encargué de mantener y contribuir a una solución de software innovadora que simplifica el proceso de manejo de becas y intercambios estudiantiles con escuelas extranjeras, optimizando el proceso de incorporación de estudiantes y proporcionando una visión integral de las ofertas educativas disponibles en diversas instituciones.",
+        "Diseñé y contribuí a una plataforma de educación continua que revolucionó la forma en que los usuarios acceden a nuevos cursos, integrando Conekta como plataforma de pago para facilitar el acceso al aprendizaje continuo y al desarrollo profesional.",
+        "Lideré la mejora de una plataforma para gestionar invitaciones a eventos sociales, simplificando cómo los usuarios envían y gestionan sus invitaciones, así como la planificación de itinerarios para eventos sociales, mejorando la experiencia general del usuario en la organización de eventos.",
+        "Desarrollé una plataforma de seguros que optimizó la generación de contratos para varios tipos de seguros, ofreciendo a los usuarios una experiencia más eficiente y personalizada para obtener cobertura según sus necesidades específicas."
+      ]
     },
     {
       "name": "Klatus",
@@ -53,7 +64,7 @@
       "startDate": "2019",
       "endDate": "2020",
       "summary": "Desempeñé funciones como soporte de aplicaciones en la empresa, brindando asistencia a diversos sistemas previamente desarrollados y entregados. Además, incorporaba nuevas funcionalidades según las necesidades específicas.",
-      "highlights": ["Started the company"]
+      "highlights": ["Diseñé y desarrollé una plataforma para el análisis de riesgos comunitarios, mostrando estadísticas por municipio para ofrecer una visión integral de los posibles riesgos."]
     },
     {
       "name": "Evient",
@@ -61,8 +72,8 @@
       "url": "https://evient.mx/",
       "startDate": "2019",
       "endDate": "2020",
-      "summary": "Participé como Backend Developer en la empresa, brindando apoyo a los sistemas existentes, corrigiendo módulos y añadiendo nuevas funcionalidades para mejorar su rendimiento",
-      "highlights": ["Started the company"]
+      "summary": "Participé como Backend Developer en la empresa, brindando apoyo a los sistemas existentes, corrigiendo módulos y añadiendo nuevas funcionalidades para mejorar su rendimiento.",
+      "highlights": []
     },
     {
       "name": "Vordem Software",
@@ -71,7 +82,11 @@
       "startDate": "2018",
       "endDate": "2019",
       "summary": "Me desempeñé como desarrollador Django en la empresa, brindando apoyo y soporte a diversos sistemas creados para clientes. Además, inicié mi colaboración en el desarrollo interno de un producto.",
-      "highlights": ["Started the company"]
+      "highlights": [
+        "Desarrollé un sistema para conectar proveedores con compradores en el entorno empresarial.",
+        "Creé un sistema para intercambiar obras de arte digitales dentro de una empresa.",
+        "Construí un sistema donde los proyectos podían ser registrados y los mentores podían proporcionar retroalimentación."
+      ]
     }
   ],
   "volunteer": [
@@ -400,5 +415,16 @@
       "highlights": ["REACT", "FastAPI", "Astro", "Docker"],
       "url": ""
     }
-  ]
+  ],
+  "strengths": [
+    "Adaptabilidad",
+    "Aprendizaje continuo",
+    "Autocontrol",
+    "Autodisciplina",
+    "Colaboración",
+    "Determinación",
+    "Persistencia",
+    "Solucion de problemas",
+    "Trabajo en equipo"
+  ] 
 }

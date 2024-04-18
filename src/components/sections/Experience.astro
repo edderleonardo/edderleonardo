@@ -11,7 +11,7 @@ const darkMode = typeof window !== 'undefined' ? localStorage.getItem('darkMode'
   <ul>
     {
       work.map(
-        ({ name, startDate, endDate, position, summary, url }) => {
+        ({ name, startDate, endDate, position, summary, url, highlights }) => {
           const endYear = endDate != null ? endDate : "Actual"
           const years = `${startDate} - ${endYear}`
           return (
@@ -31,6 +31,15 @@ const darkMode = typeof window !== 'undefined' ? localStorage.getItem('darkMode'
 
                 <footer>
                   <p class="text-gray-600 dark:text-slate-50">{summary}</p>
+                  <ul class="no-gap mt-5">
+                    {
+                      highlights.map(
+                        (highlight) => (
+                          <li class="text-gray-600 dark:text-slate-50">{highlight}</li>
+                        )
+                      )
+                    }
+                  </ul>
                 </footer>
               </article>
             </li>
@@ -42,6 +51,12 @@ const darkMode = typeof window !== 'undefined' ? localStorage.getItem('darkMode'
 </Section>
 
 <style>
+  .no-gap {
+    gap: 0 !important;
+    list-style: initial;
+    padding-left: 20px;
+    font-size: 0.9rem;
+  }
   ul {
     display: flex;
     flex-direction: column;
