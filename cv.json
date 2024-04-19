@@ -48,7 +48,7 @@
         "Creé una página de destino para ayudar a los usuarios a pagar sus deudas vencidas, la cual fue utilizada por más de 47,000 personas."
       ],
       "skills": [
-        "AWS API Gateway", "AWS CloudWatch", "AWS EC2", "AWS Lambda", "CSS", "Django", "Django Rest Framework", "Git", "Github", "HTML", "JavaScript", "Jinja", "MySQL", "Python", "SASS", "Tailwind", "Vue"
+        "AWS API Gateway", "AWS CloudWatch", "AWS DynamoDB", "AWS EC2", "AWS Lambda", "CSS", "Django", "Django Rest Framework", "Git", "Github", "HTML", "JavaScript", "Jinja", "MySQL", "Python", "SASS", "Tailwind", "Vue"
       ]
     },
     {
