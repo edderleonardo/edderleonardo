@@ -39,11 +39,11 @@
       "url": "https://www.destacame.cl/",
       "startDate": "2021",
       "endDate": "2023",
-      "summary": "Colaboré en la empresa como FullStack Developer, donde mantuve y añadí nuevas funcionalidades al producto de la compañía. Mi labor se centró en garantizar un desarrollo integral, abarcando tanto el frontend como el backend, con el objetivo de optimizar y enriquecer constantemente nuestro producto.",
+      "summary": "Mantuve y añadí nuevas funcionalidades al producto de la compañía. Mi labor se centró en garantizar un desarrollo integral para optimizar y enriquecer constantemente el producto.",
       "highlights": [
         "Orqueste la integración de APIs de instituciones financieras como Vexi, Financiera Independencia, CuraDeuda, Creditea, Escampa, Amicar; enriqueciendo significativamente el catálogo de productos disponible para los usuarios en la plataforma.",
         "Trabajé en el diseño y optimización de la interfaz de usuario para los informes de buró de crédito, con el objetivo de hacerla más clara y fácil de usar para nuestros usuarios finales, mejorando así la claridad y la usabilidad de la interfaz.",
-        "Implemente soluciones innovadoras que redujeron drásticamente los errores en la generación de informes de buró de crédito, mejorando la precisión del proceso en un 90%.",
+        "Desarrollé un proyecto utilizando Django que generaba informes del buró de crédito, logrando una drástica reducción de errores y mejorando la precisión del proceso en un 90%.",
         "Revolucioné la experiencia de usuario mediante mejoras intuitivas en la navegación de nuestra plataforma, lo que resultó en un aumento notable en la accesibilidad y la eficiencia.",
         "Creé una página de destino para ayudar a los usuarios a pagar sus deudas vencidas, la cual fue utilizada por más de 47,000 personas."
       ]
@@ -58,7 +58,7 @@
       "highlights": [
         "Me encargué de mantener y contribuir a una solución de software innovadora que simplifica el proceso de manejo de becas y intercambios estudiantiles con escuelas extranjeras, optimizando el proceso de incorporación de estudiantes y proporcionando una visión integral de las ofertas educativas disponibles en diversas instituciones.",
         "Diseñé y contribuí a una plataforma de educación continua que revolucionó la forma en que los usuarios acceden a nuevos cursos, integrando Conekta como plataforma de pago para facilitar el acceso al aprendizaje continuo y al desarrollo profesional.",
-        "Lideré la mejora de una plataforma para gestionar invitaciones a eventos sociales, simplificando cómo los usuarios envían y gestionan sus invitaciones, así como la planificación de itinerarios para eventos sociales, mejorando la experiencia general del usuario en la organización de eventos.",
+        "Lideré la construcción de una plataforma para gestionar invitaciones a eventos sociales, simplificando cómo los usuarios envían y gestionan sus invitaciones, así como la planificación de itinerarios para eventos sociales, mejorando la experiencia general del usuario en la organización de eventos.",
         "Desarrollé una plataforma de seguros que optimizó la generación de contratos para varios tipos de seguros, ofreciendo a los usuarios una experiencia más eficiente y personalizada para obtener cobertura según sus necesidades específicas."
       ]
     },
