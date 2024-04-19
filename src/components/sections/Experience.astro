@@ -1,19 +1,28 @@
 ---
-import Section from "../Section.astro"
+import Section from "../Section.astro";
 
-import { work } from "@cv"
+import { work } from "@cv";
 
-const darkMode = typeof window !== 'undefined' ? localStorage.getItem('darkMode') : true;
-
+const darkMode =
+  typeof window !== "undefined" ? localStorage.getItem("darkMode") : true;
 ---
 
 <Section title="Experiencia laboral">
   <ul>
     {
       work.map(
-        ({ name, startDate, endDate, position, summary, url, highlights }) => {
-          const endYear = endDate != null ? endDate : "Actual"
-          const years = `${startDate} - ${endYear}`
+        ({
+          name,
+          startDate,
+          endDate,
+          position,
+          summary,
+          url,
+          highlights,
+          skills,
+        }) => {
+          const endYear = endDate != null ? endDate : "Actual";
+          const years = `${startDate} - ${endYear}`;
           return (
             <li>
               <article>
@@ -32,18 +41,24 @@ const darkMode = typeof window !== 'undefined' ? localStorage.getItem('darkMode'
                 <footer>
                   <p class="text-gray-600 dark:text-slate-50">{summary}</p>
                   <ul class="no-gap mt-5">
-                    {
-                      highlights.map(
-                        (highlight) => (
-                          <li class="text-gray-600 dark:text-slate-50">{highlight}</li>
-                        )
-                      )
-                    }
+                    {highlights.map((highlight) => (
+                      <li class="text-gray-600	 dark:text-slate-50 mb-2">
+                        {highlight}
+                      </li>
+                    ))}
                   </ul>
+                  <p class="mt-5">
+                    <strong>
+                      <span class="back"> Dest</span>rezas
+                    </strong>
+                  </p>
+                  <p class="mt-1 text-gray-800 dark:text-slate-50">
+                    {skills.join(", ")}
+                  </p>
                 </footer>
               </article>
             </li>
-          )
+          );
         }
       )
     }
@@ -51,6 +66,11 @@ const darkMode = typeof window !== 'undefined' ? localStorage.getItem('darkMode'
 </Section>
 
 <style>
+  .back {
+    background-color: #f8b84b;
+    padding: 5px 0 5px 5px;
+  }
+
   .no-gap {
     gap: 0 !important;
     list-style: initial;
