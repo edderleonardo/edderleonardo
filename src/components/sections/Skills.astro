@@ -1,25 +1,26 @@
 ---
-import Section from "../Section.astro"
-import HTML from "@/icons/html.astro"
-import CSS from "@/icons/css.astro"
-import JavaScript from "@/icons/javascript.astro"
-import TypeScript from "@/icons/type.astro"
-import React from "@/icons/react.astro"
-import Node from "@/icons/node.astro"
-import MySQL from "@/icons/sql.astro"
-import Git from "@/icons/git.astro"
-import GitHub from "@/icons/GitHub.astro"
-import Tailwind from "@/icons/tailwind.astro"
-import Next from "@/icons/next.astro"
-import Python from "@/icons/python.astro"
-import Django from "@/icons/django.astro"
-import FastAPI from "@/icons/fastapi.astro"
-import Postgres from "@/icons/postgres.astro"
-import Flask from "@/icons/flask.astro"
-import AWS from "@/icons/aws.astro"
-import Vue from "@/icons/vue.astro"
-import astro from "@/icons/astro.astro"
-import { skills } from "@cv"
+import Section from "../Section.astro";
+import HTML from "@/icons/html.astro";
+import CSS from "@/icons/css.astro";
+import JavaScript from "@/icons/javascript.astro";
+import TypeScript from "@/icons/type.astro";
+import React from "@/icons/react.astro";
+import Node from "@/icons/node.astro";
+import MySQL from "@/icons/sql.astro";
+import Git from "@/icons/git.astro";
+import GitHub from "@/icons/GitHub.astro";
+import Tailwind from "@/icons/tailwind.astro";
+import Next from "@/icons/next.astro";
+import Python from "@/icons/python.astro";
+import Django from "@/icons/django.astro";
+import FastAPI from "@/icons/fastapi.astro";
+import Postgres from "@/icons/postgres.astro";
+import Flask from "@/icons/flask.astro";
+import AWS from "@/icons/aws.astro";
+import Vue from "@/icons/vue.astro";
+import astro from "@/icons/astro.astro";
+import Jinja from "@/icons/jinja.astro";
+import { skills } from "@cv";
 
 const SKILLS_ICONS: Record<string, any> = {
   HTML,
@@ -41,22 +42,25 @@ const SKILLS_ICONS: Record<string, any> = {
   AWS,
   Vue,
   astro,
-}
+  Jinja,
+};
 ---
 
 <Section title="Habilidades">
   <ul>
     {
-      skills.map(({ name }) => {
-        const iconName = name === "Next.js" ? "Next" : name
-        const Icon = SKILLS_ICONS[iconName]
+      [...skills]
+        .sort((a, b) => a.name.localeCompare(b.name))
+        .map(({ name }) => {
+          const iconName = name === "Next.js" ? "Next" : name;
+          const Icon = SKILLS_ICONS[iconName];
 
-        return (
-          <li>
-            {Icon && <Icon />} <span>{name}</span>
-          </li>
-        )
-      })
+          return (
+            <li>
+              {Icon && <Icon />} <span>{name}</span>
+            </li>
+          );
+        })
     }
   </ul>
 </Section>
