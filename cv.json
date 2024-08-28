@@ -28,7 +28,7 @@
       {
         "network": "Download",
         "username": "edderleonardo",
-        "url": "https://res.cloudinary.com/edderleonardo/image/upload/v1713414673/edderleonardo_es_fmeoez.pdf"
+        "url": "https://res.cloudinary.com/edderleonardo/image/upload/v1724864760/edderleonardo_es_v4x23t.pdf"
       }
     ]
   },
@@ -227,6 +227,12 @@
     }
   ],
   "certificates": [
+    {
+      "name": "Scrum Foundation Professional Certificate (SFPC)",
+      "date": "2024",
+      "issuer": "CertiProf",
+      "url": "https://res.cloudinary.com/edderleonardo/image/upload/v1724864560/Certificate_rqqa0c.pdf"
+    },
     {
       "name": "The Complete Guide to Django REST Framework and Vue JS",
       "date": "2021",
