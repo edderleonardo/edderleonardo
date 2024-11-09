@@ -39,9 +39,12 @@
       "url": "https://www.ia.com.mx",
       "startDate": "2024",
       "endDate": "Actualmente",
-      "summary": "Work in Progress ...",
-      "highlights": [],
-      "skills": ["Python"]
+      "summary": "Participo como Python Backend Developer encargándome de crear y mantener microservicios. Además, colaboro en la creación de varios SDK para distintos proyectos de la empresa.",
+
+      "highlights": [
+        "Diseñé y participé activamente en la arquitectura y desarrollo de un SDK central multiplataforma que optimiza el manejo de errores del sistema, mejorando la experiencia del usuario y facilitando el diagnóstico de problemas."
+      ],
+      "skills": ["AWS", "DynamoDB", "FastAPI", "Python"]
     },
     {
       "name": "K2 Partnering Solutions",
