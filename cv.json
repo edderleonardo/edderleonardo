@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Edder Ramírez",
-    "label": "Python Engineer | Independent Contractor | GDG Organizer",
+    "label": "Python Engineer | GDG Organizer",
     "image": "/me.webp",
     "email": "edderleonardo@gmail.com",
     "phone": "+52 9997052986",
@@ -9,10 +9,10 @@
     "summary": "<p class='leading-relaxed text-gray-600 dark:text-slate-50' style='margin-bottom:10px'>Desarrollador Python con +6 años construyendo soluciones backend escalables con Django y FastAPI. Actualmente enfocado en el desarrollo de agentes AI, con experiencia e interés en Google ADK, LlamaIndex y Vertex AI para crear soluciones inteligentes y automatizadas.</p>",
     "location": {
       "address": "",
-      "postalCode": "24000",
-      "city": "Campeche",
+      "postalCode": "",
+      "city": "Remoto",
       "countryCode": "MX",
-      "region": "México"
+      "region": ""
     },
     "profiles": [
       {
