@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Edder Ramírez",
-    "label": "Python FullStack Developer",
+    "label": "Python Developer",
     "image": "/me.webp",
     "email": "edderleonardo@gmail.com",
     "phone": "+52 9997052986",
     "url": "",
-    "summary": "<p class='leading-relaxed text-gray-600 dark:text-slate-50' style='margin-bottom:10px'>I am passionate about continuous learning and strive to constantly improve my skills. I have extensive experience in Python and frameworks like Django, which has allowed me to develop efficient and scalable solutions for various projects.</p>",
+    "summary": "<p class='leading-relaxed text-gray-600 dark:text-slate-50' style='margin-bottom:10px'>Python Developer with 6+ years building scalable backend solutions with Django and FastAPI. Currently focused on AI agent development, with experience and interest in Google ADK, LlamaIndex and Vertex AI to create intelligent and automated solutions.</p>",
     "location": {
       "address": "",
       "postalCode": "24000",
@@ -28,7 +28,7 @@
       {
         "network": "Download",
         "username": "edderleonardo",
-        "url": "https://res.cloudinary.com/edderleonardo/image/upload/v1731166514/cyilhgwfwmkuwuizhygb.pdf"
+        "url": "/cv-edder-ramirez-en.pdf"
       }
     ]
   },
@@ -43,7 +43,7 @@
       "highlights": [
         "Designed and actively participated in the architecture and development of a central multiplatform SDK that optimizes system error handling, improving user experience and facilitating problem diagnosis."
       ],
-      "skills": ["AWS", "DynamoDB", "FastAPI", "Python"]
+      "skills": ["AWS", "DynamoDB", "FastAPI", "Python", "Java"]
     },
     {
       "name": "K2 Partnering Solutions",
@@ -477,6 +477,21 @@
       "name": "Jinja",
       "level": "Master",
       "keywords": ["Web Development", "Frontend"]
+    },
+    {
+      "name": "Google ADK",
+      "level": "Advanced",
+      "keywords": ["AI", "Agents", "Google", "Machine Learning"]
+    },
+    {
+      "name": "LlamaIndex",
+      "level": "Advanced",
+      "keywords": ["AI", "RAG", "LLM", "Machine Learning"]
+    },
+    {
+      "name": "Google Cloud",
+      "level": "Advanced",
+      "keywords": ["Cloud", "GCP", "Infrastructure", "Backend"]
     }
   ],
   "languages": [

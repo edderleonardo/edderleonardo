@@ -7,7 +7,10 @@
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "generate:cv": "node scripts/generate-cv-pdf.js",
+    "generate:cv:en": "node scripts/generate-cv-pdf.js en",
+    "generate:cv:all": "npm run generate:cv && npm run generate:cv:en"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.6",
@@ -23,6 +26,7 @@
   },
   "devDependencies": {
     "@types/react": "^19.2.10",
-    "@types/react-dom": "^19.2.3"
+    "@types/react-dom": "^19.2.3",
+    "puppeteer": "^24.36.1"
   }
 }
