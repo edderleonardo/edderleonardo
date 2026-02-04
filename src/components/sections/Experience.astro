@@ -48,21 +48,27 @@ const skillsText = lang === "en" ? "Skills" : "Destrezas";
 
                 <footer>
                   <p class="text-gray-600 dark:text-slate-50">{summary}</p>
-                  <ul class="no-gap mt-5">
-                    {highlights.map((highlight) => (
-                      <li class="text-gray-600	 dark:text-slate-50 mb-2">
-                        {highlight}
-                      </li>
-                    ))}
-                  </ul>
-                  <p class="mt-5">
-                    <strong class="text-gray-950 dark:text-white">
-                      <span class="back"> {skillsText.slice(0, 4)}</span>{skillsText.slice(4)}
-                    </strong>
-                  </p>
-                  <p class="mt-1 text-gray-800 dark:text-slate-50">
-                    {skills?.join(", ") || ""}
-                  </p>
+                  {highlights && highlights.length > 0 && (
+                    <ul class="no-gap mt-5">
+                      {highlights.map((highlight) => (
+                        <li class="text-gray-600 dark:text-slate-50 mt-1">
+                          {highlight}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                  {skills && skills.length > 0 && (
+                    <div class="skills-section">
+                      <p>
+                        <strong class="text-gray-950 dark:text-white">
+                          <span class="back"> {skillsText.slice(0, 4)}</span>{skillsText.slice(4)}
+                        </strong>
+                      </p>
+                      <p class="mt-1 text-gray-800 dark:text-slate-50">
+                        {skills.join(", ")}
+                      </p>
+                    </div>
+                  )}
                 </footer>
               </article>
             </li>
@@ -77,6 +83,10 @@ const skillsText = lang === "en" ? "Skills" : "Destrezas";
   .back {
     background-color: #f8b84b;
     padding: 5px 0 5px 5px;
+  }
+
+  .skills-section {
+    margin-top: 1.25rem;
   }
 
   .no-gap {

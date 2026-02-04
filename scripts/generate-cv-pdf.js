@@ -178,11 +178,20 @@ const html = `
       line-height: 1.4;
     }
 
+    .job-skills-container {
+      margin-top: 10px;
+    }
+
+    .job-skills-label {
+      font-size: 9px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
     .job-skills {
       display: flex;
       flex-wrap: wrap;
       gap: 5px;
-      margin-top: 6px;
     }
 
     .skill-tag {
@@ -371,8 +380,11 @@ const html = `
           </ul>
         ` : ''}
         ${job.skills && job.skills.length > 0 ? `
-          <div class="job-skills">
-            ${job.skills.map(s => `<span class="skill-tag">${s}</span>`).join('')}
+          <div class="job-skills-container">
+            <div class="job-skills-label">${lang === 'en' ? 'Skills' : 'Destrezas'}</div>
+            <div class="job-skills">
+              ${job.skills.map(s => `<span class="skill-tag">${s}</span>`).join('')}
+            </div>
           </div>
         ` : ''}
       </div>
