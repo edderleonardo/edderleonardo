@@ -31,8 +31,8 @@ interface Props {
 const { cvData } = Astro.props;
 const skills = cvData.skills;
 
-// Títulos según idioma
-const lang = new URL(Astro.request.url).searchParams.get("lang") || "en";
+// Títulos según idioma (detectar por pathname)
+const lang = Astro.url.pathname.startsWith("/es") ? "es" : "en";
 const sectionTitle = lang === "en" ? "Skills" : "Habilidades";
 
 const SKILLS_ICONS: Record<string, any> = {

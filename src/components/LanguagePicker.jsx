@@ -4,24 +4,21 @@ export const LanguagePicker = () => {
   const [language, setLanguage] = useState("en");
 
   useEffect(() => {
-    // Obtener idioma actual de la URL
-    const currentLang = new URLSearchParams(window.location.search).get("lang") || "en";
-    setLanguage(currentLang);
+    // Detect language from URL path
+    const isSpanish = window.location.pathname.startsWith("/es");
+    setLanguage(isSpanish ? "es" : "en");
   }, []);
 
   const handleLanguageChange = () => {
-    const newLanguage = language === "en" ? "es" : "en";
+    const isSpanish = window.location.pathname.startsWith("/es");
 
-    // Actualizar URL y recargar
-    const url = new URL(window.location);
-    if (newLanguage === "en") {
-      url.searchParams.delete("lang");
+    if (isSpanish) {
+      // Go to English (root)
+      window.location.href = "/";
     } else {
-      url.searchParams.set("lang", newLanguage);
+      // Go to Spanish
+      window.location.href = "/es/";
     }
-
-    // Navegar a la nueva URL
-    window.location.href = url.toString();
   };
 
   const buttonStyle = {

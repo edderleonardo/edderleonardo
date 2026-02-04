@@ -12,11 +12,11 @@ import UserPreferences from "@/components/UserPreferences.astro"
 import Strengths from "@/components/sections/Strengths.astro"
 import { getCVData } from "@/utils/i18n.js"
 
-// Default language is English for the main page
-const lang = "en";
+// Spanish version
+const lang = "es";
 const cvData = await getCVData(lang);
 const { name, label } = cvData.basics;
-const pageTitle = `${name}'s Portfolio - ${label}`;
+const pageTitle = `Portafolio de ${name} - ${label}`;
 ---
 
 <Layout title={pageTitle}>

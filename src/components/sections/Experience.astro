@@ -9,7 +9,7 @@ const { cvData } = Astro.props;
 const work = cvData.work;
 
 // Títulos según idioma
-const lang = new URL(Astro.request.url).searchParams.get("lang") || "en";
+const lang = Astro.url.pathname.startsWith("/es") ? "es" : "en";
 const sectionTitle = lang === "en" ? "Work Experience" : "Experiencia laboral";
 const currentText = lang === "en" ? "Current" : "Actual";
 const skillsText = lang === "en" ? "Skills" : "Destrezas";

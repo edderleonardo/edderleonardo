@@ -9,8 +9,8 @@ interface Props {
 const { cvData } = Astro.props;
 const projects = cvData.projects;
 
-// Títulos según idioma  
-const lang = new URL(Astro.request.url).searchParams.get("lang") || "en";
+// Títulos según idioma
+const lang = Astro.url.pathname.startsWith("/es") ? "es" : "en";
 const sectionTitle = lang === "en" ? "Projects" : "Proyectos";
 ---
 

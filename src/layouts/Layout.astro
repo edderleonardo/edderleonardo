@@ -1,8 +1,8 @@
 ---
 import "../styles/global.css";
 
-// Determinar el idioma basado en el parámetro URL
-const lang = Astro.url.searchParams.get("lang") || "en";
+// Determinar el idioma basado en la ruta URL
+const lang = Astro.url.pathname.startsWith("/es") ? "es" : "en";
 
 // Importar el CV según el idioma
 let cvData;
