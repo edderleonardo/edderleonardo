@@ -1,10 +1,19 @@
 ---
 import Section from "../Section.astro";
 
-import { education } from "@cv";
+interface Props {
+  cvData: any;
+}
+
+const { cvData } = Astro.props;
+const education = cvData.education;
+
+// Títulos según idioma
+const lang = new URL(Astro.request.url).searchParams.get("lang") || "en";
+const sectionTitle = lang === "en" ? "Education" : "Educación";
 ---
 
-<Section title="Educación">
+<Section title={sectionTitle}>
   <ul>
     {
       education.map(({ institution, startDate, endDate, area }) => {

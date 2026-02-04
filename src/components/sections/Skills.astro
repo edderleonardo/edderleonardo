@@ -20,7 +20,17 @@ import AWS from "@/icons/aws.astro";
 import Vue from "@/icons/vue.astro";
 import astro from "@/icons/astro.astro";
 import Jinja from "@/icons/jinja.astro";
-import { skills } from "@cv";
+
+interface Props {
+  cvData: any;
+}
+
+const { cvData } = Astro.props;
+const skills = cvData.skills;
+
+// Títulos según idioma
+const lang = new URL(Astro.request.url).searchParams.get("lang") || "en";
+const sectionTitle = lang === "en" ? "Skills" : "Habilidades";
 
 const SKILLS_ICONS: Record<string, any> = {
   HTML,
@@ -46,7 +56,7 @@ const SKILLS_ICONS: Record<string, any> = {
 };
 ---
 
-<Section title="Habilidades">
+<Section title={sectionTitle}>
   <ul>
     {
       [...skills]

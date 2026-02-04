@@ -1,9 +1,19 @@
 ---
 import Section from "../Section.astro";
-import { certificates } from "@cv";
+
+interface Props {
+  cvData: any;
+}
+
+const { cvData } = Astro.props;
+const certificates = cvData.certificates;
+
+// Títulos según idioma
+const lang = new URL(Astro.request.url).searchParams.get("lang") || "en";
+const sectionTitle = lang === "en" ? "Certificates and Courses" : "Certificados y Cursos";
 ---
 
-<Section title="Certificados y Cursos">
+<Section title={sectionTitle}>
   <ul>
     {
       [...certificates]

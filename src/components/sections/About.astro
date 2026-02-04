@@ -1,10 +1,18 @@
 ---
 import Section from "../Section.astro"
 
-import { basics } from "@cv"
-const { summary } = basics
+interface Props {
+  cvData: any;
+}
+
+const { cvData } = Astro.props;
+const { summary } = cvData.basics;
+
+// Títulos según idioma
+const lang = new URL(Astro.request.url).searchParams.get("lang") || "en";
+const sectionTitle = lang === "en" ? "About me" : "Sobre mí";
 ---
 
-<Section title="Sobre mí">
+<Section title={sectionTitle}>
     <Fragment set:html={summary} />
-</section>
+</Section>

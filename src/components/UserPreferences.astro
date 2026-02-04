@@ -1,10 +1,13 @@
 ---
 import { DarkMode } from "./DarkMode.jsx";
+import { LanguagePicker } from "./LanguagePicker.jsx";
 ---
 
 <div class="preference-container no-print">
-  <DarkMode client:load/>
-  
+  <div class="preferences-buttons">
+    <DarkMode client:load/>
+    <LanguagePicker client:load/>
+  </div>
 </div>
 
 <style>
@@ -12,5 +15,11 @@ import { DarkMode } from "./DarkMode.jsx";
     position: absolute;
     right: 0;
     padding: 12px;
+  }
+  
+  .preferences-buttons {
+    display: flex;
+    gap: 16px;
+    align-items: center;
   }
 </style>

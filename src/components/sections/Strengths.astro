@@ -1,10 +1,19 @@
 ---
-import { strengths } from "@cv"
 import Section from "../Section.astro"
 
+interface Props {
+  cvData: any;
+}
+
+const { cvData } = Astro.props;
+const strengths = cvData.strengths;
+
+// Títulos según idioma
+const lang = new URL(Astro.request.url).searchParams.get("lang") || "en";
+const sectionTitle = lang === "en" ? "Strengths" : "Fortalezas";
 ---
 
-<Section title="Fortalezas">
+<Section title={sectionTitle}>
   <ul>
     {strengths.map(strength => (
       <li>{strength}</li>

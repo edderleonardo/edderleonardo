@@ -1,13 +1,21 @@
 ---
 import Section from "../Section.astro";
 
-import { work } from "@cv";
+interface Props {
+  cvData: any;
+}
 
-const darkMode =
-  typeof window !== "undefined" ? localStorage.getItem("darkMode") : true;
+const { cvData } = Astro.props;
+const work = cvData.work;
+
+// Títulos según idioma
+const lang = new URL(Astro.request.url).searchParams.get("lang") || "en";
+const sectionTitle = lang === "en" ? "Work Experience" : "Experiencia laboral";
+const currentText = lang === "en" ? "Current" : "Actual";
+const skillsText = lang === "en" ? "Skills" : "Destrezas";
 ---
 
-<Section title="Experiencia laboral">
+<Section title={sectionTitle}>
   <ul>
     {
       work.map(
@@ -21,7 +29,7 @@ const darkMode =
           highlights,
           skills,
         }) => {
-          const endYear = endDate != null ? endDate : "Actual";
+          const endYear = endDate != null ? endDate : currentText;
           const years = `${startDate} - ${endYear}`;
           return (
             <li>
@@ -49,11 +57,11 @@ const darkMode =
                   </ul>
                   <p class="mt-5">
                     <strong class="text-gray-950 dark:text-white">
-                      <span class="back"> Dest</span>rezas
+                      <span class="back"> {skillsText.slice(0, 4)}</span>{skillsText.slice(4)}
                     </strong>
                   </p>
                   <p class="mt-1 text-gray-800 dark:text-slate-50">
-                    {skills.join(", ")}
+                    {skills?.join(", ") || ""}
                   </p>
                 </footer>
               </article>

@@ -1,190 +1,482 @@
 {
   "basics": {
-    "name": "Miguel Ángel Durán",
-    "label": "Full-Stack developer with more than 15 years of experience & development content creator",
+    "name": "Edder Ramírez",
+    "label": "Python FullStack Developer",
     "image": "/me.webp",
-    "email": "miduga@gmail.com",
-    "phone": "+34 688888888",
-    "url": "https://midu.dev",
-    "summary": "+15 years of experience as a web developer. Currently I am a content creator and development dommunicator. I live in Barcelona, Spain. I have worked in different environments: from accelerating the development of start-ups to leading teams in multinational companies.",
+    "email": "edderleonardo@gmail.com",
+    "phone": "+52 9997052986",
+    "url": "",
+    "summary": "<p class='leading-relaxed text-gray-600 dark:text-slate-50' style='margin-bottom:10px'>I am passionate about continuous learning and strive to constantly improve my skills. I have extensive experience in Python and frameworks like Django, which has allowed me to develop efficient and scalable solutions for various projects.</p>",
     "location": {
       "address": "",
-      "postalCode": "08820",
-      "city": "el Prat de Llobregat",
-      "countryCode": "ES",
-      "region": "Spain"
+      "postalCode": "24000",
+      "city": "Campeche",
+      "countryCode": "MX",
+      "region": "Mexico"
     },
     "profiles": [
       {
         "network": "LinkedIn",
-        "username": "midudev",
-        "url": "https://linkedin.com/in/midudev"
-      },
-      {
-        "network": "X",
-        "username": "midudev",
-        "url": "https://x.com/midudev"
+        "username": "edderleonardo",
+        "url": "https://www.linkedin.com/in/edderleonardo/"
       },
       {
         "network": "GitHub",
-        "username": "midudev",
-        "url": "https://github.com/midudev"
+        "username": "edderleonardo",
+        "url": "https://github.com/edderleonardo"
+      },
+      {
+        "network": "Download",
+        "username": "edderleonardo",
+        "url": "https://res.cloudinary.com/edderleonardo/image/upload/v1731166514/cyilhgwfwmkuwuizhygb.pdf"
       }
     ]
   },
   "work": [
     {
-      "name": "midudev",
-      "position": "Web programming communicator",
-      "url": "https://twitch.tv/midudev",
-      "startDate": "2021-01-01",
-      "endDate": null,
-      "summary": "Most watched development streamer in Spanish on Twitch. +1 million followers across all my social networks. Recognised by Google, Microsoft and GitHub for my impact on the development community.",
+      "name": "IA Interactive",
+      "position": "Python Software Engineer",
+      "url": "https://www.ia.com.mx",
+      "startDate": "2024",
+      "endDate": "Currently",
+      "summary": "I work as a Python Backend Developer, responsible for creating and maintaining microservices. Additionally, I collaborate in the development of various SDKs for different company projects.",
       "highlights": [
-        "Started the company"
+        "Designed and actively participated in the architecture and development of a central multiplatform SDK that optimizes system error handling, improving user experience and facilitating problem diagnosis."
+      ],
+      "skills": ["AWS", "DynamoDB", "FastAPI", "Python"]
+    },
+    {
+      "name": "K2 Partnering Solutions",
+      "position": "Python Backend Developer",
+      "url": "https://k2partnering.com/",
+      "startDate": "2024",
+      "endDate": "2024",
+      "summary": "I collaborated on a project where data uploaded from a CSV file was manipulated and processed to send to an API, in order to create different energy offers and generate graphical visualizations. Additionally, I built microservices using Python and Serverless Framework, which were consumed from the application's frontend.",
+      "highlights": [],
+      "skills": [
+        "AWS API Gateway",
+        "AWS CloudWatch",
+        "AWS DynamoDB",
+        "AWS EC2",
+        "AWS Lambda",
+        "CodeCommits",
+        "Git",
+        "Postgres",
+        "Python",
+        "Serverless Framework",
+        "SQL"
       ]
     },
     {
-      "name": "Adevinta",
-      "position": "Lead Frontend Architect",
-      "url": "https://twitch.tv/midudev",
-      "startDate": "2016-06-01",
-      "endDate": "2022-09-01",
-      "summary": "I led a technical convergence between different products and migrated from a monolithic architecture to a more flexible and optimised one. I fostered best practices and performance culture improvements, as well as rapid delivery of value to users.",
+      "name": "Destácame",
+      "position": "FullStack Developer",
+      "url": "https://www.destacame.cl/",
+      "startDate": "2021",
+      "endDate": "2023",
+      "summary": "I maintained and added new functionalities to the company's product. My work focused on ensuring comprehensive development to constantly optimize and enrich the product.",
       "highlights": [
-        "Started the company"
+        "Orchestrated the integration of APIs from financial institutions such as Vexi, Financiera Independencia, CuraDeuda, Creditea, Escampa, Amicar; significantly enriching the catalog of products available for users on the platform.",
+        "Worked on designing and optimizing the user interface for credit bureau reports, with the goal of making it clearer and easier to use for our end users, thus improving the clarity and usability of the interface.",
+        "Developed a project using Django that generated credit bureau reports, achieving a drastic reduction in errors and improving process accuracy by 90%.",
+        "Revolutionized user experience through intuitive improvements in our platform navigation, resulting in a notable increase in accessibility and efficiency.",
+        "Created a landing page to help users pay their overdue debts, which was used by more than 47,000 people."
+      ],
+      "skills": [
+        "AWS API Gateway",
+        "AWS CloudWatch",
+        "AWS DynamoDB",
+        "AWS EC2",
+        "AWS Lambda",
+        "CSS",
+        "Django",
+        "Django Rest Framework",
+        "Git",
+        "Github",
+        "HTML",
+        "JavaScript",
+        "Jinja",
+        "MySQL",
+        "Python",
+        "SASS",
+        "Tailwind",
+        "Vue"
       ]
     },
     {
-      "name": "Hubii",
-      "position": "Senior FrontEnd Developer",
-      "startDate": "2011-03-01",
-      "endDate": "2016-05-01",
-      "summary": "I developed a geolocated news platform and an API to consume the information. Scaled services to support the load of over hundreds of thousands of requests per day. Cut delivery times and deployments to production by half. Collaborated with Mozilla and Telefónica to develop the first FirefoxOS TV app.",
+      "name": "Alluxi",
+      "position": "FullStack Developer",
+      "url": "https://www.alluxi.com/es/",
+      "startDate": "2020",
+      "endDate": "2021",
+      "summary": "I collaborated at the company as a web developer, responsible for maintaining and implementing new functionalities in existing systems.",
       "highlights": [
-        "Started the company"
+        "I was responsible for maintaining and contributing to software that simplifies the process of managing scholarships and student exchanges with foreign schools, optimizing the student onboarding process and providing a comprehensive view of educational offerings available at various institutions.",
+        "Designed and contributed to a continuing education platform that revolutionized how users access new courses, integrating Conekta as a payment platform to facilitate access to continuous learning and professional development.",
+        "Led the construction of a platform to manage social event invitations, simplifying how users send and manage their invitations, as well as itinerary planning for social events, improving the overall user experience in event organization.",
+        "Developed an insurance platform that optimized contract generation for various types of insurance, offering users a more efficient and personalized experience to obtain coverage according to their specific needs."
+      ],
+      "skills": [
+        "AWS EC2",
+        "CSS",
+        "SASS",
+        "Docker",
+        "Django",
+        "Django Rest Framework",
+        "Git",
+        "Github",
+        "HTML",
+        "JavaScript",
+        "Postgres",
+        "Python",
+        "Vue"
+      ]
+    },
+    {
+      "name": "Klatus",
+      "position": "Application Support",
+      "url": "https://klatus.com/",
+      "startDate": "2019",
+      "endDate": "2020",
+      "summary": "I performed application support functions at the company, providing assistance to various previously developed and delivered systems. Additionally, I incorporated new functionalities according to specific needs.",
+      "highlights": [
+        "Designed and developed a platform for community risk analysis, displaying statistics by municipality to provide a comprehensive view of potential risks."
+      ],
+      "skills": [
+        "Django",
+        "Django Rest Framework",
+        "Git",
+        "Github",
+        "HTML",
+        "JavaScript",
+        "Postgres",
+        "Python"
+      ]
+    },
+    {
+      "name": "Evient",
+      "position": "Django Developer",
+      "url": "https://evient.mx/",
+      "startDate": "2019",
+      "endDate": "2020",
+      "summary": "I participated as a Backend Developer at the company, providing support to existing systems, fixing modules, and adding new functionalities to improve their performance.",
+      "highlights": [],
+      "skills": [
+        "Django",
+        "Git",
+        "Github",
+        "HTML",
+        "JavaScript",
+        "Postgres",
+        "Python"
+      ]
+    },
+    {
+      "name": "Vordem Software",
+      "position": "Django Developer",
+      "url": "https://vordem.io/",
+      "startDate": "2018",
+      "endDate": "2019",
+      "summary": "I worked as a Django developer at the company, providing support and assistance to various systems created for clients. Additionally, I began collaborating on the internal development of a product.",
+      "highlights": [
+        "Developed a system to connect suppliers with buyers in the business environment.",
+        "Created a system for exchanging digital artworks within a company.",
+        "Built a system where projects could be registered and mentors could provide feedback."
+      ],
+      "skills": [
+        "CSS",
+        "Django",
+        "Django Rest Framework",
+        "Git",
+        "Github",
+        "HTML",
+        "JavaScript",
+        "Jinja",
+        "Jquery",
+        "Postgres",
+        "Python"
       ]
     }
   ],
-  "volunteer": [{
-    "organization": "Organization",
-    "position": "Volunteer",
-    "url": "https://organization.com/",
-    "startDate": "2012-01-01",
-    "endDate": "2013-01-01",
-    "summary": "Description…",
-    "highlights": [
-      "Awarded 'Volunteer of the Month'"
-    ]
-  }],
-  "education": [{
-    "institution": "Universitat Oberta de Catalunya",
-    "url": "https://www.uoc.edu/portal/es/index.html",
-    "area": "Software Engineer",
-    "studyType": "Bachelor",
-    "startDate": "2003-01-01",
-    "endDate": "2009-01-01",
-    "score": "4.0",
-    "courses": [
-      "DB1101 - Basic SQL"
-    ]
-  }],
-  "awards": [{
-    "title": "Award",
-    "date": "2014-11-01",
-    "awarder": "Company",
-    "summary": "There is no spoon."
-  }],
-  "certificates": [{
-    "name": "Certificate",
-    "date": "2021-11-07",
-    "issuer": "Company",
-    "url": "https://certificate.com"
-  }],
-  "publications": [{
-    "name": "Publication",
-    "publisher": "Company",
-    "releaseDate": "2014-10-01",
-    "url": "https://publication.com",
-    "summary": "Description…"
-  }],
+  "volunteer": [
+    {
+      "organization": "Organization",
+      "position": "Volunteer",
+      "url": "https://organization.com/",
+      "startDate": "2012-01-01",
+      "endDate": "2013-01-01",
+      "summary": "Description…",
+      "highlights": ["Awarded 'Volunteer of the Month'"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universidad Interamericana para el desarrollo (UNID)",
+      "url": "https://www.unid.edu.mx/",
+      "area": "Information Systems Engineering",
+      "studyType": "Bachelor",
+      "startDate": "2011",
+      "endDate": "2013",
+      "score": "4.0",
+      "courses": ["DB1101 - Basic SQL"]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Award",
+      "date": "2014-11-01",
+      "awarder": "Company",
+      "summary": "There is no spoon."
+    }
+  ],
+  "certificates": [
+    {
+      "name": "ChatGPT AI Voice Chatbot Build with React and FAST API Combo",
+      "date": "2025",
+      "issuer": "Udemy",
+      "url": "https://www.udemy.com/certificate/UC-1a077fc7-6aba-4475-8aec-c0e2a39f9c90/"
+    },
+    {
+      "name": "Scrum Foundation Professional Certificate (SFPC)",
+      "date": "2024",
+      "issuer": "CertiProf",
+      "url": "https://res.cloudinary.com/edderleonardo/image/upload/v1724864560/Certificate_rqqa0c.pdf"
+    },
+    {
+      "name": "The Complete Guide to Django REST Framework and Vue JS",
+      "date": "2021",
+      "issuer": "Udemy",
+      "url": "https://www.udemy.com/certificate/UC-3b1b118f-7c40-4717-bdcd-401f2abbc296/"
+    },
+    {
+      "name": "FastAPI - The Complete Course 2023 (Beginner + Advanced)",
+      "date": "2023",
+      "issuer": "Udemy",
+      "url": "https://www.udemy.com/certificate/UC-77bbee62-83a6-4030-b256-c1769990fe4b/"
+    },
+    {
+      "name": "Python Master Course: From Zero to All-Terrain Programmer",
+      "date": "2017",
+      "issuer": "Udemy",
+      "url": "https://www.udemy.com/certificate/UC-PNX1YE52/"
+    },
+    {
+      "name": "Python and Django Full Stack Web Developer Bootcamp",
+      "date": "2017",
+      "issuer": "Udemy",
+      "url": "https://www.udemy.com/certificate/UC-KQH47AOI/"
+    },
+    {
+      "name": "Try Django",
+      "date": "2018",
+      "issuer": "Udemy",
+      "url": "https://www.udemy.com/certificate/UC-TL7Z38EO/"
+    },
+    {
+      "name": "Build a Backend REST API with Python & Django - Beginner",
+      "date": "2018",
+      "issuer": "Udemy",
+      "url": "https://www.udemy.com/certificate/UC-W97VRB4E/"
+    },
+    {
+      "name": "React JS - Introduction Course from Scratch and First Steps",
+      "date": "2019",
+      "issuer": "Udemy",
+      "url": "https://www.udemy.com/certificate/UC-7WXM3CZ7/"
+    },
+    {
+      "name": "Build a Backend REST API with Python & Django - Advanced",
+      "date": "2020",
+      "issuer": "Udemy",
+      "url": "https://www.udemy.com/certificate/UC-IRBF1VKI/"
+    },
+    {
+      "name": "Learn to Create SaaS Projects with Django Tenant/PostgreSQL",
+      "date": "2020",
+      "issuer": "Udemy",
+      "url": "https://www.udemy.com/certificate/UC-cbaf5b7f-f1e5-4a78-8181-6e3e4c27aff7/"
+    },
+    {
+      "name": "Test-Driven Development in Django",
+      "date": "2020",
+      "issuer": "LinkedIn Learning",
+      "url": "https://www.linkedin.com/learning/certificates/ebadffd5ed9026f9781a9f7a7fb72e868ea2dce839455d79a24a68d1c0236863"
+    },
+    {
+      "name": "Building RESTful Web APIs with Django",
+      "date": "2021",
+      "issuer": "LinkedIn Learning",
+      "url": "https://www.linkedin.com/learning/certificates/4c55a3ee05a49f763e35740ee9ce7cfa4e8defb4395470a6471ac1baef17cf5d"
+    },
+    {
+      "name": "AWS Partner: Accreditation (Technical)",
+      "date": "2021",
+      "issuer": "Amazon Web Services Training and Certification",
+      "url": "https://www.credly.com/badges/60116fa6-f0b7-41cd-8bd0-0940e768a67e?source=linked_in_profile"
+    },
+    {
+      "name": "Advanced Python",
+      "date": "2022",
+      "issuer": "LinkedIn Learning",
+      "url": "https://www.linkedin.com/learning/certificates/b04586a9cf10355556c60b0c581b91409110ec14faf803961ed3399fd21d04b0?u=89909618"
+    },
+    {
+      "name": "How to Develop Emotional Intelligence",
+      "date": "2022",
+      "issuer": "LinkedIn Learning",
+      "url": "https://www.linkedin.com/learning/certificates/a50ebc0c0cb662a4977427e1c8c7b5428d40b1b69410231630fa165012506409"
+    },
+    {
+      "name": "English for Developers & IT Professionals",
+      "date": "2024",
+      "issuer": "Desafío Latam",
+      "url": "https://cursos.desafiolatam.com/certificates/fk01c5y2be"
+    },
+    {
+      "name": "Nuxt.js: Universal Applications with Vue.js",
+      "date": "2023",
+      "issuer": "Udemy",
+      "url": "https://www.udemy.com/certificate/UC-1c224aae-ad4f-4103-9cdd-e780ede981e6/"
+    }
+  ],
+  "publications": [
+    {
+      "name": "Publication",
+      "publisher": "Company",
+      "releaseDate": "2014-10-01",
+      "url": "https://publication.com",
+      "summary": "Description…"
+    }
+  ],
   "skills": [
     {
       "name": "HTML",
       "level": "Master",
-      "keywords": [
-        "Web development", "Frontend"
-      ]
+      "keywords": ["Web Development", "Frontend"]
     },
     {
       "name": "CSS",
       "level": "Master",
-      "keywords": [
-        "Web development", "Frontend", "Diseño Responsive"
-      ]
+      "keywords": ["Web Development", "Frontend", "Responsive Design"]
     },
     {
       "name": "JavaScript",
       "level": "Master",
-      "keywords": [
-        "Web development", "Frontend", "Backend", "Fullstack"
-      ]
+      "keywords": ["Web Development", "Frontend", "Backend", "Fullstack"]
     },
     {
       "name": "Tailwind",
       "level": "Advanced",
       "keywords": [
-        "Web development", "Frontend", "CSS Framework", "Diseño Responsive"
+        "Web Development",
+        "Frontend",
+        "CSS Framework",
+        "Responsive Design"
       ]
     },
     {
-      "name": "TypeScript",
+      "name": "Vue",
+      "level": "Advanced",
+      "keywords": ["Web Development", "Frontend", "JavaScript Library", "UI"]
+    },
+    {
+      "name": "React",
+      "level": "Advanced",
+      "keywords": ["Web Development", "Frontend", "JavaScript Library", "UI"]
+    },
+    {
+      "name": "astro",
+      "level": "Advanced",
+      "keywords": []
+    },
+    {
+      "name": "Git",
+      "level": "Advanced",
+      "keywords": ["Version Control", "Collaboration", "Source Code"]
+    },
+    {
+      "name": "GitHub",
       "level": "Advanced",
       "keywords": [
-        "Web development", "Frontend", "Backend", "JavaScript Superset"
+        "Version Control",
+        "Collaboration",
+        "Source Code",
+        "Git"
       ]
     },
     {
-      "name": "Node",
+      "name": "Python",
       "level": "Advanced",
       "keywords": [
-        "Web development", "Backend", "JavaScript", "Servidor"
+        "Databases",
+        "SQL",
+        "Data Storage",
+        "Backend"
+      ]
+    },
+    {
+      "name": "Django",
+      "level": "Advanced",
+      "keywords": [
+        "Databases",
+        "SQL",
+        "Data Storage",
+        "Backend"
+      ]
+    },
+    {
+      "name": "FastAPI",
+      "level": "Advanced",
+      "keywords": [
+        "Databases",
+        "SQL",
+        "Data Storage",
+        "Backend"
+      ]
+    },
+    {
+      "name": "Flask",
+      "level": "Advanced",
+      "keywords": [
+        "Databases",
+        "SQL",
+        "Data Storage",
+        "Backend"
       ]
     },
     {
       "name": "MySQL",
       "level": "Advanced",
       "keywords": [
-        "Bases de Datos", "SQL", "Database", "Backend"
+        "Databases",
+        "SQL",
+        "Data Storage",
+        "Backend"
       ]
     },
     {
-      "name": "Git",
+      "name": "Postgres",
       "level": "Advanced",
       "keywords": [
-        "Version control", "Colaboración", "Source code"
+        "Databases",
+        "SQL",
+        "Data Storage",
+        "Backend"
       ]
     },
     {
-      "name": "GitHub",
+      "name": "AWS",
       "level": "Advanced",
       "keywords": [
-        "Version control", "Collaboration", "Source code", "Git"
+        "Databases",
+        "SQL",
+        "Data Storage",
+        "Backend"
       ]
     },
     {
-      "name": "Next.js",
-      "level": "Advanced",
-      "keywords": [
-        "Web development", "Frontend", "React Framework", "SSR", "Static Generation"
-      ]
-    },
-    {
-      "name": "React",
-      "level": "Advanced",
-      "keywords": [
-        "Web development", "Frontend", "JavaScript Library", "UI"
-      ]
+      "name": "Jinja",
+      "level": "Master",
+      "keywords": ["Web Development", "Frontend"]
     }
   ],
   "languages": [
@@ -197,79 +489,77 @@
       "fluency": "Advanced"
     }
   ],
-  "interests": [{
-    "name": "Wildlife",
-    "keywords": [
-      "Ferrets",
-      "Unicorns"
-    ]
-  }],
-  "references": [{
-    "name": "Jane Doe",
-    "reference": "Reference…"
-  }],
+  "interests": [
+    {
+      "name": "Wildlife",
+      "keywords": ["Ferrets", "Unicorns"]
+    }
+  ],
+  "references": [
+    {
+      "name": "Jane Doe",
+      "reference": "Reference…"
+    }
+  ],
   "projects": [
     {
-      "name": "mars.codes",
+      "name": "Virginia Moon",
       "isActive": true,
-      "description": "Interactive story with programming challenges to travel to Mars",
-      "highlights": [
-        "Choose your own adventure",
-        "In progress"
-      ],
-      "url": "https://mars.codes"
+      "description": "Online store for women's clothing and accessories",
+      "github": "",
+      "highlights": ["HTML", "CSS", "JavaScript"],
+      "url": "https://virginiamoon.mx/"
     },
     {
-      "name": "AdventJS",
+      "name": "UmafeIP",
       "isActive": true,
-      "description": "JavaScript programming challenges for every day of December until Christmas",
-      "highlights": [
-        "+1 million visits",
-        "Multilanguage",
-        "JavaScript & TypeScript"
-      ],
-      "url": "https://advent.js/dev"
+      "description": "Website and clinical record system for a medical office in Campeche, Mexico.",
+      "highlights": ["HTML", "CSS", "JavaScript", "Python", "Django"],
+      "url": "http://umafeip.com/"
     },
     {
-      "name": "Codember",
+      "name": "Eventy",
       "isActive": true,
-      "description": "Interactive programming game with challenges and secrets",
+      "description": "System that helps manage social event invitations. Developed at Alluxi Agency.",
+      "agency": ["Alluxi"],
       "highlights": [
-        "+2000 active users",
-        "Challenges for any language"
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Vue",
+        "Python",
+        "Django",
+        "DRF",
+        "SASS",
+        "Docker"
       ],
-      "url": "https://codember.dev"
+      "url": "https://eventy.mx/accounts/login/?next=/"
     },
     {
-      "name": "codi.link",
+      "name": "Se buscan proveedores",
       "isActive": true,
-      "description": "Playground of HTML, CSS and JavaScript code for sharing",
-      "highlights": [
-        "100k monthly visit",
-        "Developed by the community"
-      ],
-      "url": "https://codi.link",
-      "github": "https://github.com/midudev/codi.link"
+      "description": "Platform that helps connect suppliers with customers and vice versa in Mexico. Developed at Vordem Software Agency.",
+      "agency": ["Vordem Software"],
+      "highlights": ["HTML", "CSS", "JavaScript", "Python", "Django", "DRF"],
+      "url": "https://sebuscanproveedores.com/"
     },
     {
-      "name": "Pruebas Técnicas",
-      "isActive": true,
-      "description": "List of technical tests of companies to practice programming",
-      "highlights": [
-        "100% free",
-        "+500 community solutions"
-      ],
-      "url": "https://pruebastecnicas.com",
-      "github": "https://github.com/midudev/pruebas-tecnicas"
-    },
-    {
-      "name": "miduConf",
-      "description": "Streaming programming conference for the Spanish-speaking community with top talks",
-      "highlights": [
-        "+15k tickets handed over",
-        "+50k live viewers"
-      ],
-      "url": "https://miduconf.com"
+      "name": "Clinical Records",
+      "isActive": false,
+      "description": "Clinical record system for medical offices",
+      "highlights": ["REACT", "FastAPI", "Astro", "Docker"],
+      "url": ""
     }
+  ],
+  "strengths": [
+    "Adaptability",
+    "Continuous Learning",
+    "Self-control",
+    "Self-discipline",
+    "Collaboration",
+    "Determination",
+    "Persistence",
+    "Problem Solving",
+    "Teamwork"
   ]
 }

@@ -2,10 +2,19 @@
 import GitHub from "@/icons/GitHub.astro";
 import Section from "../Section.astro";
 
-import { projects } from "@cv";
+interface Props {
+  cvData: any;
+}
+
+const { cvData } = Astro.props;
+const projects = cvData.projects;
+
+// Títulos según idioma  
+const lang = new URL(Astro.request.url).searchParams.get("lang") || "en";
+const sectionTitle = lang === "en" ? "Projects" : "Proyectos";
 ---
 
-<Section title="Proyectos">
+<Section title={sectionTitle}>
   <ul>
     {
       projects.map(

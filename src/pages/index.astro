@@ -10,21 +10,32 @@ import Skills from "@/components/sections/Skills.astro"
 import KeyboardManager from "@/components/KeyboardManager.astro"
 import UserPreferences from "@/components/UserPreferences.astro"
 import Strengths from "@/components/sections/Strengths.astro"
-import { basics } from "@cv"
-const { name, label } = basics
+import { getCVData } from "@/utils/i18n.js"
+
+// Obtener idioma y datos del CV
+const lang = Astro.url.searchParams.get("lang") || "en";
+const cvData = await getCVData(lang);
+const { name, label } = cvData.basics;
+
+// Títulos según idioma
+const titles = {
+  es: `Portafolio de ${name} - ${label}`,
+  en: `${name}'s Portfolio - ${label}`
+};
+const pageTitle = titles[lang] || titles.en;
 ---
 
-<Layout title={`Portafolio de ${name} - ${label}`}>
+<Layout title={pageTitle}>
   <UserPreferences/>
   <main>
-    <Hero />
-    <About />
-    <Experience />
-    <Education />
-    <Certificates />
-    <Projects />
-    <Skills />
-    <Strengths />
+    <Hero cvData={cvData} />
+    <About cvData={cvData} />
+    <Experience cvData={cvData} />
+    <Education cvData={cvData} />
+    <Certificates cvData={cvData} />
+    <Projects cvData={cvData} />
+    <Skills cvData={cvData} />
+    <Strengths cvData={cvData} />
   </main>
 
 </Layout>
