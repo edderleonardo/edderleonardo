@@ -344,15 +344,13 @@ const html = `
       <span class="contact-item">
         <span>${cv.basics.email}</span>
       </span>
+      ${cv.basics.phone ? `<span class="contact-item"><span>${cv.basics.phone}</span></span>` : ''}
       <span class="contact-item">
-        <span>${cv.basics.phone}</span>
-      </span>
-      <span class="contact-item">
-        <span>${cv.basics.location.city}, ${cv.basics.location.region}</span>
+        <span>${cv.basics.location.city}${cv.basics.location.region ? ', ' + cv.basics.location.region : ''}</span>
       </span>
       ${cv.basics.profiles.filter(p => p.network !== 'Download').map(p => `
         <span class="contact-item">
-          <a href="${p.url}">${p.network}</a>
+          <a href="${p.url}">${p.url.replace('https://www.', '').replace('https://', '')}</a>
         </span>
       `).join('')}
     </div>
