@@ -231,6 +231,12 @@
   ],
   "certificates": [
     {
+      "name": "Google Agent Development Kit (ADK) Masterclass",
+      "date": "2026",
+      "issuer": "Udemy",
+      "url": "https://www.udemy.com/certificate/UC-d8481b95-e5ef-4150-98ee-7e09f626b8ad/"
+    },
+    {
       "name": "ChatGPT AI Voice Chatbot Build with React and FAST API Combo",
       "date": "2025",
       "issuer": "Udemy",
@@ -502,7 +508,7 @@
     },
     {
       "language": "English",
-      "fluency": "Advanced"
+      "fluency": "B1 - Intermediate"
     }
   ],
   "interests": [
@@ -518,14 +524,6 @@
     }
   ],
   "projects": [
-    {
-      "name": "Virginia Moon",
-      "isActive": true,
-      "description": "Tienda online de ropa y accesorios para mujer",
-      "github": "",
-      "highlights": ["HTML", "CSS", "JavaScript"],
-      "url": "https://virginiamoon.mx/"
-    },
     {
       "name": "UmafeIP",
       "isActive": true,

@@ -38,6 +38,19 @@ const labels = {
 
 const l = labels[lang];
 
+// Labels for summary section
+const summaryLabel = lang === 'en' ? 'Professional Summary' : 'Resumen Profesional';
+
+// Build contact line as plain text with pipes
+const contactParts = [cv.basics.email];
+if (cv.basics.phone) contactParts.push(cv.basics.phone);
+const locationText = cv.basics.location.city + (cv.basics.location.region ? ', ' + cv.basics.location.region : '');
+contactParts.push(locationText);
+cv.basics.profiles.filter(p => p.network !== 'Download').forEach(p => {
+  contactParts.push(p.url.replace('https://www.', '').replace('https://', ''));
+});
+const contactLine = contactParts.join('  |  ');
+
 // Generate HTML
 const html = `
 <!DOCTYPE html>
@@ -46,9 +59,6 @@ const html = `
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${cv.basics.name} - CV</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -57,83 +67,67 @@ const html = `
     }
 
     body {
-      font-family: 'IBM Plex Mono', monospace;
-      font-size: 10px;
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 10.5px;
       line-height: 1.5;
-      color: #1a1a1a;
-      padding: 50px 60px;
+      color: #000;
+      padding: 0;
       max-width: 100%;
     }
 
     a {
-      color: #1a1a1a;
+      color: #000;
       text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
     }
 
     /* Header */
     .header {
-      margin-bottom: 25px;
-      border-bottom: 2px solid #1a1a1a;
-      padding-bottom: 20px;
+      text-align: center;
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #000;
     }
 
     .name {
-      font-size: 28px;
+      font-size: 24px;
       font-weight: 700;
-      margin-bottom: 4px;
-      letter-spacing: -0.5px;
+      margin-bottom: 2px;
     }
 
     .title {
-      font-size: 14px;
-      font-weight: 500;
-      color: #444;
-      margin-bottom: 12px;
+      font-size: 12px;
+      font-weight: 400;
+      margin-bottom: 6px;
     }
 
     .contact {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-      font-size: 9px;
-    }
-
-    .contact-item {
-      display: flex;
-      align-items: center;
-      gap: 4px;
-    }
-
-    /* Summary */
-    .summary {
-      margin-bottom: 20px;
-      font-size: 10px;
-      line-height: 1.6;
-      color: #333;
+      font-size: 9.5px;
     }
 
     /* Sections */
     .section {
-      margin-bottom: 20px;
+      margin-bottom: 14px;
     }
 
     .section-title {
-      font-size: 12px;
+      font-size: 11.5px;
       font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-bottom: 12px;
-      padding-bottom: 4px;
-      border-bottom: 1px solid #ccc;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+      padding-bottom: 2px;
+      border-bottom: 1px solid #000;
+    }
+
+    /* Summary */
+    .summary-text {
+      font-size: 10px;
+      line-height: 1.5;
     }
 
     /* Experience */
     .job {
-      margin-bottom: 15px;
+      margin-bottom: 12px;
       page-break-inside: avoid;
     }
 
@@ -141,69 +135,53 @@ const html = `
       display: flex;
       justify-content: space-between;
       align-items: baseline;
-      margin-bottom: 4px;
     }
 
     .job-title {
-      font-size: 11px;
-      font-weight: 600;
+      font-size: 10.5px;
+      font-weight: 700;
     }
 
     .job-date {
-      font-size: 9px;
-      color: #666;
+      font-size: 10px;
+      font-style: italic;
     }
 
     .job-company {
-      font-size: 10px;
-      color: #444;
-      margin-bottom: 6px;
+      font-size: 10.5px;
+      font-style: italic;
+      margin-bottom: 4px;
     }
 
     .job-summary {
-      font-size: 9px;
-      color: #333;
-      margin-bottom: 6px;
+      font-size: 10px;
+      margin-bottom: 4px;
       line-height: 1.5;
     }
 
     .job-highlights {
       list-style: disc;
-      margin-left: 16px;
-      font-size: 9px;
+      margin-left: 18px;
+      font-size: 10px;
     }
 
     .job-highlights li {
-      margin-bottom: 3px;
+      margin-bottom: 2px;
       line-height: 1.4;
     }
 
-    .job-skills-container {
-      margin-top: 10px;
+    .job-skills-text {
+      font-size: 10px;
+      margin-top: 4px;
     }
 
-    .job-skills-label {
-      font-size: 9px;
-      font-weight: 600;
-      margin-bottom: 4px;
-    }
-
-    .job-skills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 5px;
-    }
-
-    .skill-tag {
-      font-size: 8px;
-      background: #f0f0f0;
-      padding: 2px 6px;
-      border-radius: 3px;
+    .job-skills-text strong {
+      font-weight: 700;
     }
 
     /* Education */
     .education-item {
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
 
     .education-header {
@@ -213,118 +191,69 @@ const html = `
     }
 
     .education-degree {
-      font-size: 10px;
-      font-weight: 600;
+      font-size: 10.5px;
+      font-weight: 700;
     }
 
     .education-date {
-      font-size: 9px;
-      color: #666;
+      font-size: 10px;
+      font-style: italic;
     }
 
     .education-institution {
-      font-size: 9px;
-      color: #444;
+      font-size: 10px;
+      font-style: italic;
     }
 
     /* Skills */
-    .skills-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-
-    .skill-item {
-      font-size: 9px;
-      background: #f5f5f5;
-      padding: 4px 10px;
-      border-radius: 4px;
-      border: 1px solid #e0e0e0;
+    .skills-text {
+      font-size: 10px;
+      line-height: 1.6;
     }
 
     /* Projects */
     .project {
-      margin-bottom: 12px;
+      margin-bottom: 8px;
       page-break-inside: avoid;
     }
 
     .project-name {
-      font-size: 10px;
-      font-weight: 600;
-    }
-
-    .project-description {
-      font-size: 9px;
-      color: #444;
-      margin-top: 2px;
+      font-size: 10.5px;
+      font-weight: 700;
     }
 
     .project-url {
-      font-size: 8px;
-      color: #666;
+      font-size: 9.5px;
+      font-style: italic;
+    }
+
+    .project-description {
+      font-size: 10px;
+      margin-top: 2px;
     }
 
     /* Certificates */
-    .cert-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 8px;
-    }
-
     .cert-item {
-      font-size: 9px;
-      padding: 6px 8px;
-      background: #fafafa;
-      border-radius: 3px;
+      margin-bottom: 4px;
+      font-size: 10px;
     }
 
     .cert-name {
-      font-weight: 500;
-      margin-bottom: 2px;
+      font-weight: 700;
     }
 
     .cert-issuer {
-      font-size: 8px;
-      color: #666;
+      font-style: italic;
     }
 
     /* Languages */
-    .languages-grid {
-      display: flex;
-      gap: 20px;
-    }
-
-    .language-item {
-      font-size: 9px;
-    }
-
-    .language-name {
-      font-weight: 600;
-    }
-
-    .language-level {
-      color: #666;
+    .lang-text {
+      font-size: 10px;
     }
 
     /* Strengths */
-    .strengths-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-
-    .strength-item {
-      font-size: 9px;
-      background: #f0f0f0;
-      padding: 4px 10px;
-      border-radius: 4px;
-    }
-
-    /* Two columns layout for bottom sections */
-    .two-columns {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 30px;
+    .strengths-text {
+      font-size: 10px;
     }
 
     @media print {
@@ -340,25 +269,13 @@ const html = `
   <header class="header">
     <h1 class="name">${cv.basics.name}</h1>
     <p class="title">${cv.basics.label}</p>
-    <div class="contact">
-      <span class="contact-item">
-        <span>${cv.basics.email}</span>
-      </span>
-      ${cv.basics.phone ? `<span class="contact-item"><span>${cv.basics.phone}</span></span>` : ''}
-      <span class="contact-item">
-        <span>${cv.basics.location.city}${cv.basics.location.region ? ', ' + cv.basics.location.region : ''}</span>
-      </span>
-      ${cv.basics.profiles.filter(p => p.network !== 'Download').map(p => `
-        <span class="contact-item">
-          <a href="${p.url}">${p.url.replace('https://www.', '').replace('https://', '')}</a>
-        </span>
-      `).join('')}
-    </div>
+    <p class="contact">${contactLine}</p>
   </header>
 
-  <!-- Summary -->
-  <section class="summary">
-    ${cv.basics.summary.replace(/<[^>]*>/g, '')}
+  <!-- Professional Summary -->
+  <section class="section">
+    <h2 class="section-title">${summaryLabel}</h2>
+    <p class="summary-text">${cv.basics.summary.replace(/<[^>]*>/g, '')}</p>
   </section>
 
   <!-- Experience -->
@@ -370,7 +287,7 @@ const html = `
           <span class="job-title">${job.position}</span>
           ${job.startDate || job.endDate ? `<span class="job-date">${job.startDate}${job.startDate && job.endDate ? ' - ' : ''}${job.endDate}</span>` : ''}
         </div>
-        <div class="job-company"><a href="${job.url}">${job.name}</a></div>
+        <div class="job-company">${job.name}</div>
         <p class="job-summary">${job.summary}</p>
         ${job.highlights && job.highlights.length > 0 ? `
           <ul class="job-highlights">
@@ -378,12 +295,7 @@ const html = `
           </ul>
         ` : ''}
         ${job.skills && job.skills.length > 0 ? `
-          <div class="job-skills-container">
-            <div class="job-skills-label">${lang === 'en' ? 'Skills' : 'Destrezas'}</div>
-            <div class="job-skills">
-              ${job.skills.map(s => `<span class="skill-tag">${s}</span>`).join('')}
-            </div>
-          </div>
+          <p class="job-skills-text"><strong>${lang === 'en' ? 'Skills:' : 'Destrezas:'}</strong> ${job.skills.join(', ')}</p>
         ` : ''}
       </div>
     `).join('')}
@@ -398,7 +310,7 @@ const html = `
           <span class="education-degree">${edu.area}</span>
           <span class="education-date">${edu.startDate} - ${edu.endDate}</span>
         </div>
-        <div class="education-institution"><a href="${edu.url}">${edu.institution}</a></div>
+        <div class="education-institution">${edu.institution}</div>
       </div>
     `).join('')}
   </section>
@@ -406,9 +318,7 @@ const html = `
   <!-- Skills -->
   <section class="section">
     <h2 class="section-title">${l.skills}</h2>
-    <div class="skills-grid">
-      ${cv.skills.map(s => `<span class="skill-item">${s.name}</span>`).join('')}
-    </div>
+    <p class="skills-text">${cv.skills.map(s => s.name).join(', ')}</p>
   </section>
 
   <!-- Projects -->
@@ -417,46 +327,32 @@ const html = `
     ${cv.projects.filter(p => p.isActive).map(project => `
       <div class="project">
         <span class="project-name">${project.name}</span>
-        ${project.url ? `<span class="project-url"> - <a href="${project.url}">${project.url}</a></span>` : ''}
+        ${project.url ? ` <span class="project-url">(${project.url})</span>` : ''}
         <p class="project-description">${project.description}</p>
       </div>
     `).join('')}
   </section>
 
-  <div class="two-columns">
-    <!-- Languages -->
-    <section class="section">
-      <h2 class="section-title">${l.languages}</h2>
-      <div class="languages-grid">
-        ${cv.languages.map(lang => `
-          <div class="language-item">
-            <span class="language-name">${lang.language}</span>
-            <span class="language-level"> - ${lang.fluency}</span>
-          </div>
-        `).join('')}
-      </div>
-    </section>
+  <!-- Languages -->
+  <section class="section">
+    <h2 class="section-title">${l.languages}</h2>
+    <p class="lang-text">${cv.languages.map(l => l.language + ' (' + l.fluency + ')').join(', ')}</p>
+  </section>
 
-    <!-- Strengths -->
-    <section class="section">
-      <h2 class="section-title">${l.strengths}</h2>
-      <div class="strengths-grid">
-        ${cv.strengths.map(s => `<span class="strength-item">${s}</span>`).join('')}
-      </div>
-    </section>
-  </div>
+  <!-- Strengths -->
+  <section class="section">
+    <h2 class="section-title">${l.strengths}</h2>
+    <p class="strengths-text">${cv.strengths.join(', ')}</p>
+  </section>
 
-  <!-- Certificates (selected) -->
+  <!-- Certificates -->
   <section class="section">
     <h2 class="section-title">${l.certificates}</h2>
-    <div class="cert-grid">
-      ${cv.certificates.slice(0, 8).map(cert => `
-        <div class="cert-item">
-          <div class="cert-name"><a href="${cert.url}">${cert.name}</a></div>
-          <div class="cert-issuer">${cert.issuer} - ${cert.date}</div>
-        </div>
-      `).join('')}
-    </div>
+    ${cv.certificates.map(cert => `
+      <div class="cert-item">
+        <span class="cert-name">${cert.name}</span> - <span class="cert-issuer">${cert.issuer}, ${cert.date}</span>
+      </div>
+    `).join('')}
   </section>
 </body>
 </html>
