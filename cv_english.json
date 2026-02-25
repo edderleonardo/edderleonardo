@@ -230,6 +230,12 @@
   ],
   "certificates": [
     {
+      "name": "Engineer AI Agents with Agent Development Kit (ADK)",
+      "date": "2026",
+      "issuer": "Google",
+      "url": "https://www.skills.google/public_profiles/04b01a5e-c73b-4062-bd32-498b38c68fae/badges/22556637?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share"
+    },
+    {
       "name": "Google Agent Development Kit (ADK) Masterclass",
       "date": "2026",
       "issuer": "Udemy",
