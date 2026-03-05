@@ -19,7 +19,15 @@ interface Props {
 }
 
 const { title } = Astro.props;
-const { image, summary, url } = basics;
+const { image, summary } = basics;
+
+// Strip HTML tags from summary for meta descriptions
+const cleanSummary = summary.replace(/<[^>]*>/g, '').trim();
+
+// Site URL
+const siteUrl = "https://edderleonardo.dev";
+const currentUrl = siteUrl + Astro.url.pathname;
+const ogImage = siteUrl + image;
 ---
 
 <!doctype html>
@@ -37,7 +45,7 @@ const { image, summary, url } = basics;
       html:not(.dark) body { background-color: #fff; }
     </style>
     <title>{title}</title>
-    <meta name="description" content={summary} />
+    <meta name="description" content={cleanSummary} />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preload" as="image" href={image} />
@@ -46,18 +54,18 @@ const { image, summary, url } = basics;
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
-    <meta property="og:url" content={url} />
+    <meta property="og:url" content={currentUrl} />
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
-    <meta property="og:description" content={summary} />
-    <meta property="og:image" content="" />
+    <meta property="og:description" content={cleanSummary} />
+    <meta property="og:image" content={ogImage} />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta property="twitter:domain" content={url.split("//")[1] ?? ""} />
-    <meta property="twitter:url" content={url} />
+    <meta property="twitter:domain" content="edderleonardo.dev" />
+    <meta property="twitter:url" content={currentUrl} />
     <meta name="twitter:title" content={title} />
-    <meta name="twitter:description" content={summary} />
-    <meta name="twitter:image" content="" />
+    <meta name="twitter:description" content={cleanSummary} />
+    <meta name="twitter:image" content={ogImage} />
   </head>
   <body class="bg-white dark:bg-slate-900">
     <slot />
