@@ -10,6 +10,7 @@ import Skills from "@/components/sections/Skills.astro"
 import KeyboardManager from "@/components/KeyboardManager.astro"
 import UserPreferences from "@/components/UserPreferences.astro"
 import Strengths from "@/components/sections/Strengths.astro"
+import Volunteer from "@/components/sections/Volunteer.astro"
 import { getCVData } from "@/utils/i18n.js"
 
 // Spanish version
@@ -25,6 +26,7 @@ const pageTitle = `Portafolio de ${name} - ${label}`;
     <Hero cvData={cvData} />
     <About cvData={cvData} />
     <Experience cvData={cvData} />
+    <Volunteer cvData={cvData} />
     <Education cvData={cvData} />
     <Certificates cvData={cvData} />
     <Projects cvData={cvData} />

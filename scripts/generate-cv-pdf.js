@@ -40,6 +40,7 @@ const l = labels[lang];
 
 // Labels for summary section
 const summaryLabel = lang === 'en' ? 'Professional Summary' : 'Resumen Profesional';
+const volunteerLabel = lang === 'en' ? 'Volunteer' : 'Voluntariado';
 
 // Build contact line as plain text with pipes
 const contactParts = [cv.basics.email];
@@ -300,6 +301,23 @@ const html = `
       </div>
     `).join('')}
   </section>
+
+  <!-- Volunteer -->
+  ${cv.volunteer && cv.volunteer.length > 0 && cv.volunteer[0].organization !== 'Organization' ? `
+  <section class="section">
+    <h2 class="section-title">${volunteerLabel}</h2>
+    ${cv.volunteer.map(v => `
+      <div class="job">
+        <div class="job-header">
+          <span class="job-title">${v.position}</span>
+          ${v.startDate || v.endDate ? `<span class="job-date">${v.startDate}${v.startDate && v.endDate ? ' - ' : ''}${v.endDate}</span>` : ''}
+        </div>
+        <div class="job-company">${v.organization}</div>
+        <p class="job-summary">${v.summary}</p>
+      </div>
+    `).join('')}
+  </section>
+  ` : ''}
 
   <!-- Education -->
   <section class="section">

@@ -34,11 +34,46 @@
   },
   "work": [
     {
+      "name": "IM Digital",
+      "position": "Python Software Engineer",
+      "url": "https://www.imdigital.com/",
+      "startDate": "2024",
+      "endDate": "Currently working",
+      "summary": "Python Engineer with hands-on experience building production-ready AI systems from semantic search and visual product discovery to multi-agent assistants with Google ADK. Passionate about turning LLMs and cloud infrastructure into real business value.",
+      "highlights": [
+        "Designed and built RAG (Retrieval-Augmented Generation) systems with LlamaIndex, Vertex AI, and PostgreSQL + pgvector for semantic search with real-time streaming (SSE)",
+        "Developed visual product search APIs using Google Vision AI and vector similarity (pgvector, Weaviate) for e-commerce clients in the jewelry industry",
+        "Built multi-agent AI assistants with Google ADK and Gemini, orchestrated via SequentialAgent with 8+ async FunctionTools, shared state management (ToolContext), dynamic instructions, and PostgreSQL-backed session persistence with admin dashboards for session monitoring",
+        "Implemented Shopify data synchronization systems using GraphQL Admin API with multi-tenant support, batch processing, and historical data versioning",
+        "Containerized and deployed microservices to Google Cloud Run with Docker multi-stage builds, Cloud SQL, and Cloud Storage"
+      ],
+      "skills": [
+        "BigQuery",
+        "Cloud Run",
+        "Docker",
+        "ETL",
+        "FastAPI",
+        "Gemini",
+        "Google ADK",
+        "Google Cloud Platform",
+        "Google Vision AI",
+        "GraphQL",
+        "LlamaIndex",
+        "LLM",
+        "pgvector",
+        "PostgreSQL",
+        "Python",
+        "RAG",
+        "Shopify API",
+        "Vertex AI"
+      ]
+    },
+    {
       "name": "IA Interactive",
       "position": "Python Software Engineer",
       "url": "https://www.ia.com.mx",
       "startDate": "2024",
-      "endDate": "Currently",
+      "endDate": "2026",
       "summary": "I work as a Python Backend Developer, responsible for creating and maintaining microservices. Additionally, I collaborate in the development of various SDKs for different company projects.",
       "highlights": [
         "Designed and actively participated in the architecture and development of a central multiplatform SDK that optimizes system error handling, improving user experience and facilitating problem diagnosis."
@@ -184,8 +219,8 @@
       ],
       "skills": [
         "CSS",
-        "Django",
         "Django Rest Framework",
+        "Django",
         "Git",
         "Github",
         "HTML",
@@ -199,13 +234,13 @@
   ],
   "volunteer": [
     {
-      "organization": "Organization",
-      "position": "Volunteer",
-      "url": "https://organization.com/",
-      "startDate": "2012-01-01",
-      "endDate": "2013-01-01",
-      "summary": "Description…",
-      "highlights": ["Awarded 'Volunteer of the Month'"]
+      "organization": "GDG San Francisco de Campeche",
+      "position": "Organizer",
+      "url": "https://gdg.community.dev/gdg-san-francisco-de-campeche/",
+      "startDate": "2024",
+      "endDate": "Currently",
+      "summary": "I organize events, workshops and meetups for the Google Developers Group community in Campeche, promoting learning of Google technologies and networking among local developers.",
+      "highlights": []
     }
   ],
   "education": [
@@ -234,6 +269,12 @@
       "date": "2026",
       "issuer": "Google",
       "url": "https://www.skills.google/public_profiles/04b01a5e-c73b-4062-bd32-498b38c68fae/badges/22556637?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share"
+    },
+    {
+      "name": "Claude Code in Action",
+      "date": "2026",
+      "issuer": "Anthropic",
+      "url": "https://verify.skilljar.com/c/xz5uifapyvcq"
     },
     {
       "name": "Google Agent Development Kit (ADK) Masterclass",
@@ -408,82 +449,42 @@
     {
       "name": "GitHub",
       "level": "Advanced",
-      "keywords": [
-        "Version Control",
-        "Collaboration",
-        "Source Code",
-        "Git"
-      ]
+      "keywords": ["Version Control", "Collaboration", "Source Code", "Git"]
     },
     {
       "name": "Python",
       "level": "Advanced",
-      "keywords": [
-        "Databases",
-        "SQL",
-        "Data Storage",
-        "Backend"
-      ]
+      "keywords": ["Databases", "SQL", "Data Storage", "Backend"]
     },
     {
       "name": "Django",
       "level": "Advanced",
-      "keywords": [
-        "Databases",
-        "SQL",
-        "Data Storage",
-        "Backend"
-      ]
+      "keywords": ["Databases", "SQL", "Data Storage", "Backend"]
     },
     {
       "name": "FastAPI",
       "level": "Advanced",
-      "keywords": [
-        "Databases",
-        "SQL",
-        "Data Storage",
-        "Backend"
-      ]
+      "keywords": ["Databases", "SQL", "Data Storage", "Backend"]
     },
     {
       "name": "Flask",
       "level": "Advanced",
-      "keywords": [
-        "Databases",
-        "SQL",
-        "Data Storage",
-        "Backend"
-      ]
+      "keywords": ["Databases", "SQL", "Data Storage", "Backend"]
     },
     {
       "name": "MySQL",
       "level": "Advanced",
-      "keywords": [
-        "Databases",
-        "SQL",
-        "Data Storage",
-        "Backend"
-      ]
+      "keywords": ["Databases", "SQL", "Data Storage", "Backend"]
     },
     {
       "name": "Postgres",
       "level": "Advanced",
-      "keywords": [
-        "Databases",
-        "SQL",
-        "Data Storage",
-        "Backend"
-      ]
+      "keywords": ["Databases", "SQL", "Data Storage", "Backend"]
     },
     {
       "name": "AWS",
       "level": "Advanced",
-      "keywords": [
-        "Databases",
-        "SQL",
-        "Data Storage",
-        "Backend"
-      ]
+      "keywords": ["Databases", "SQL", "Data Storage", "Backend"]
     },
     {
       "name": "Jinja",

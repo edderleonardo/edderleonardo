@@ -34,11 +34,46 @@
   },
   "work": [
     {
+      "name": "IM Digital",
+      "position": "Python Software Engineer",
+      "url": "https://www.imdigital.com/",
+      "startDate": "2024",
+      "endDate": "Actualmente",
+      "summary": "Python Engineer con experiencia práctica construyendo sistemas de IA listos para producción desde búsqueda semántica y descubrimiento visual de productos hasta asistentes multi-agente con Google ADK. Apasionado por convertir LLMs e infraestructura cloud en valor real para el negocio.",
+      "highlights": [
+        "Diseñé y construí sistemas RAG (Retrieval-Augmented Generation) con LlamaIndex, Vertex AI y PostgreSQL + pgvector para búsqueda semántica con streaming en tiempo real (SSE)",
+        "Desarrollé APIs de búsqueda visual de productos usando Google Vision AI y similitud vectorial (pgvector, Weaviate) para clientes de e-commerce en la industria joyera",
+        "Construí asistentes de IA multi-agente con Google ADK y Gemini, orquestados mediante SequentialAgent con más de 8 FunctionTools asíncronas, gestión de estado compartido (ToolContext), instrucciones dinámicas y persistencia de sesiones en PostgreSQL con dashboards de administración para monitoreo de sesiones",
+        "Implementé sistemas de sincronización de datos de Shopify usando GraphQL Admin API con soporte multi-tenant, batch processing y versionado de datos históricos",
+        "Contenerizé y desplegué microservicios en Google Cloud Run con Docker multi-stage builds, Cloud SQL y Cloud Storage"
+      ],
+      "skills": [
+        "BigQuery",
+        "Cloud Run",
+        "Docker",
+        "ETL",
+        "FastAPI",
+        "Gemini",
+        "Google ADK",
+        "Google Cloud Platform",
+        "Google Vision AI",
+        "GraphQL",
+        "LlamaIndex",
+        "LLM",
+        "pgvector",
+        "PostgreSQL",
+        "Python",
+        "RAG",
+        "Shopify API",
+        "Vertex AI"
+      ]
+    },
+    {
       "name": "IA Interactive",
       "position": "Python Software Engineer",
       "url": "https://www.ia.com.mx",
       "startDate": "2024",
-      "endDate": "Actualmente",
+      "endDate": "2026",
       "summary": "Participo como Python Backend Developer encargándome de crear y mantener microservicios. Además, colaboro en la creación de varios SDK para distintos proyectos de la empresa.",
 
       "highlights": [
@@ -200,13 +235,13 @@
   ],
   "volunteer": [
     {
-      "organization": "Organization",
-      "position": "Volunteer",
-      "url": "https://organization.com/",
-      "startDate": "2012-01-01",
-      "endDate": "2013-01-01",
-      "summary": "Description…",
-      "highlights": ["Awarded 'Volunteer of the Month'"]
+      "organization": "GDG San Francisco de Campeche",
+      "position": "Organizador",
+      "url": "https://gdg.community.dev/gdg-san-francisco-de-campeche/",
+      "startDate": "2024",
+      "endDate": "Actualmente",
+      "summary": "Organizo eventos, talleres y meetups de la comunidad Google Developers Group en Campeche, promoviendo el aprendizaje de tecnologías Google y el networking entre desarrolladores locales.",
+      "highlights": []
     }
   ],
   "education": [
@@ -235,6 +270,12 @@
       "date": "2026",
       "issuer": "Google",
       "url": "https://www.skills.google/public_profiles/04b01a5e-c73b-4062-bd32-498b38c68fae/badges/22556637?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share"
+    },
+    {
+      "name": "Claude Code in Action",
+      "date": "2026",
+      "issuer": "Anthropic",
+      "url": "https://verify.skilljar.com/c/xz5uifapyvcq"
     },
     {
       "name": "Google Agent Development Kit (ADK) Masterclass",
