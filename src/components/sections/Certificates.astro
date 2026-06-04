@@ -11,15 +11,52 @@ const certificates = cvData.certificates;
 // Títulos según idioma
 const lang = Astro.url.pathname.startsWith("/es") ? "es" : "en";
 const sectionTitle = lang === "en" ? "Certificates and Courses" : "Certificados y Cursos";
+
+// Número de certificados visibles antes de "Ver más"
+const VISIBLE_COUNT = 6;
+
+const sorted = [...certificates].sort(
+  (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+);
+const visible = sorted.slice(0, VISIBLE_COUNT);
+const hidden = sorted.slice(VISIBLE_COUNT);
+
+const moreLabel = lang === "en" ? `Show more (+${hidden.length})` : `Ver más (+${hidden.length})`;
+const lessLabel = lang === "en" ? "Show less" : "Ver menos";
 ---
 
 <Section title={sectionTitle}>
   <ul>
     {
-      [...certificates]
-        .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
-        .map(({ name, issuer, date, url }) => {
-          return (
+      visible.map(({ name, issuer, date, url }) => (
+        <li>
+          <article>
+            <header>
+              <div>
+                <a href={url} target="_blank" rel="noopener noreferrer">
+                  <h3 class="text-gray-900 dark:text-white">{name}</h3>
+                </a>
+              </div>
+              <time class="text-gray-900 dark:text-white">{date}</time>
+            </header>
+            <footer>
+              <p class="text-gray-950 dark:text-white">{issuer}</p>
+            </footer>
+          </article>
+        </li>
+      ))
+    }
+  </ul>
+
+  {
+    hidden.length > 0 && (
+      <details class="more">
+        <summary class="text-gray-900 dark:text-white">
+          <span class="more-label">{moreLabel}</span>
+          <span class="less-label">{lessLabel}</span>
+        </summary>
+        <ul>
+          {hidden.map(({ name, issuer, date, url }) => (
             <li>
               <article>
                 <header>
@@ -35,10 +72,11 @@ const sectionTitle = lang === "en" ? "Certificates and Courses" : "Certificados 
                 </footer>
               </article>
             </li>
-          );
-        })
-    }
-  </ul>
+          ))}
+        </ul>
+      </details>
+    )
+  }
 </Section>
 
 <style>
@@ -59,5 +97,52 @@ const sectionTitle = lang === "en" ? "Certificates and Courses" : "Certificados 
   }
   time {
     font-size: 0.85rem;
+  }
+
+  /* "Ver más" desplegable nativo (sin JS) */
+  .more {
+    margin-top: 32px;
+  }
+  /* La lista oculta aparece debajo del botón cuando se abre */
+  .more[open] ul {
+    margin-top: 32px;
+  }
+  .more summary {
+    list-style: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    width: max-content;
+    transition: opacity 0.2s ease;
+    user-select: none;
+    outline: none;
+  }
+  .more summary::-webkit-details-marker {
+    display: none;
+  }
+  .more summary::after {
+    content: "▾";
+    font-size: 1.6em;
+    line-height: 1;
+    transition: transform 0.2s ease;
+  }
+  .more[open] summary::after {
+    transform: rotate(180deg);
+  }
+  .more summary:hover {
+    opacity: 0.7;
+  }
+  /* Alterna el texto del botón según estado abierto/cerrado */
+  .more .less-label {
+    display: none;
+  }
+  .more[open] .more-label {
+    display: none;
+  }
+  .more[open] .less-label {
+    display: inline;
   }
 </style>

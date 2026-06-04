@@ -266,6 +266,24 @@
   ],
   "certificates": [
     {
+      "name": "Building with the Claude API",
+      "date": "2026",
+      "issuer": "Anthropic",
+      "url": "https://verify.skilljar.com/c/4683yjeuj2sz"
+    },
+    {
+      "name": "Introduction to Model Context Protocol",
+      "date": "2026",
+      "issuer": "Anthropic",
+      "url": "https://verify.skilljar.com/c/5cip4qrsmwgr"
+    },
+    {
+      "name": "Introduction to Agent Skills",
+      "date": "2026",
+      "issuer": "Anthropic",
+      "url": "https://verify.skilljar.com/c/jz78nhxow8h2"
+    },
+    {
       "name": "Engineer AI Agents with Agent Development Kit (ADK)",
       "date": "2026",
       "issuer": "Google",
