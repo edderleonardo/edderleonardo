@@ -1,20 +1,29 @@
 ---
 // se ejecuta en el servidor o en build time <----
 const { title } = Astro.props
-// sacar el titulo y crear dos variables, una con los primeras 4 letras y otra con el resto
+// Resaltar la primera palabra completa y dejar el resto en color normal
 
 let primeraParte = "";
 let segundaParte = "";
 
 if (title) {
-  primeraParte = title.slice(0, 4);
-  segundaParte = title.slice(4);
+  const idx = title.indexOf(" ");
+  if (idx === -1) {
+    primeraParte = title;
+  } else {
+    primeraParte = title.slice(0, idx);
+    segundaParte = title.slice(idx + 1);
+  }
 }
 
 ---
 
 <section>
-  {title && <h2 class="text-black dark:text-slate-50"><span class="back"> {primeraParte}</span><span class="text-red">{segundaParte}</span></h2>}
+  {title && (
+    <h2 class="text-black dark:text-slate-100">
+      <span class="back">{primeraParte}</span>{segundaParte && <span class="rest">{segundaParte}</span>}
+    </h2>
+  )}
   <slot />
 </section>
 
@@ -25,7 +34,12 @@ if (title) {
 <style>
   .back {
     background-color: #F8B84B;
-    padding: 5px 0 5px 5px;
+    color: #0f172a;
+    padding: 5px 5px;
+  }
+
+  .rest {
+    margin-left: 0.15ch;
   }
   section {
     max-width: 800px;

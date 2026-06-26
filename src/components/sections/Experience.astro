@@ -36,22 +36,22 @@ const skillsText = lang === "en" ? "Skills" : "Destrezas";
               <article>
                 <header>
                   <div>
-                    <h3 class="text-gray-900 dark:text-white">
+                    <h3 class="text-gray-900 dark:text-slate-200">
                       <a href={url} title={`Ver ${name}`} target="_blank">
                         {name}
                       </a>
                     </h3>
-                    <h4 class="text-gray-950 dark:text-white">{position}</h4>
+                    <h4 class="text-gray-950 dark:text-slate-200">{position}</h4>
                   </div>
-                  <time class="text-gray-900 dark:text-white">{years}</time>
+                  <time class="text-gray-900 dark:text-slate-400">{years}</time>
                 </header>
 
                 <footer>
-                  <p class="text-gray-600 dark:text-slate-50">{summary}</p>
+                  <p class="text-gray-600 dark:text-slate-300">{summary}</p>
                   {highlights && highlights.length > 0 && (
                     <ul class="no-gap mt-5">
                       {highlights.map((highlight) => (
-                        <li class="text-gray-600 dark:text-slate-50 mt-1">
+                        <li class="text-gray-600 dark:text-slate-300 mt-1">
                           {highlight}
                         </li>
                       ))}
@@ -60,11 +60,11 @@ const skillsText = lang === "en" ? "Skills" : "Destrezas";
                   {skills && skills.length > 0 && (
                     <div class="skills-section">
                       <p>
-                        <strong class="text-gray-950 dark:text-white">
+                        <strong class="text-gray-950 dark:text-slate-200">
                           <span class="back"> {skillsText.slice(0, 4)}</span>{skillsText.slice(4)}
                         </strong>
                       </p>
-                      <p class="mt-1 text-gray-800 dark:text-slate-50">
+                      <p class="mt-1 text-gray-800 dark:text-slate-300">
                         {skills.join(", ")}
                       </p>
                     </div>
@@ -93,7 +93,7 @@ const skillsText = lang === "en" ? "Skills" : "Destrezas";
     gap: 0 !important;
     list-style: initial;
     padding-left: 20px;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
   }
   ul {
     display: flex;

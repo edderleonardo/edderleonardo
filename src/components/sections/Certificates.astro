@@ -34,13 +34,13 @@ const lessLabel = lang === "en" ? "Show less" : "Ver menos";
             <header>
               <div>
                 <a href={url} target="_blank" rel="noopener noreferrer">
-                  <h3 class="text-gray-900 dark:text-white">{name}</h3>
+                  <h3 class="text-gray-900 dark:text-slate-200">{name}</h3>
                 </a>
               </div>
-              <time class="text-gray-900 dark:text-white">{date}</time>
+              <time class="text-gray-900 dark:text-slate-400">{date}</time>
             </header>
             <footer>
-              <p class="text-gray-950 dark:text-white">{issuer}</p>
+              <p class="text-gray-950 dark:text-slate-200">{issuer}</p>
             </footer>
           </article>
         </li>
@@ -51,7 +51,7 @@ const lessLabel = lang === "en" ? "Show less" : "Ver menos";
   {
     hidden.length > 0 && (
       <details class="more">
-        <summary class="text-gray-900 dark:text-white">
+        <summary class="text-gray-900 dark:text-slate-200">
           <span class="more-label">{moreLabel}</span>
           <span class="less-label">{lessLabel}</span>
         </summary>
@@ -62,13 +62,13 @@ const lessLabel = lang === "en" ? "Show less" : "Ver menos";
                 <header>
                   <div>
                     <a href={url} target="_blank" rel="noopener noreferrer">
-                      <h3 class="text-gray-900 dark:text-white">{name}</h3>
+                      <h3 class="text-gray-900 dark:text-slate-200">{name}</h3>
                     </a>
                   </div>
-                  <time class="text-gray-900 dark:text-white">{date}</time>
+                  <time class="text-gray-900 dark:text-slate-400">{date}</time>
                 </header>
                 <footer>
-                  <p class="text-gray-950 dark:text-white">{issuer}</p>
+                  <p class="text-gray-950 dark:text-slate-200">{issuer}</p>
                 </footer>
               </article>
             </li>
