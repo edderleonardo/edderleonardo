@@ -6,7 +6,7 @@
     "email": "edderleonardo@gmail.com",
     "phone": "",
     "url": "",
-    "summary": "<p class='leading-relaxed text-gray-600 dark:text-slate-50' style='margin-bottom:10px'>Python Developer with 6+ years building scalable backend solutions with Django and FastAPI. Currently focused on AI agent development, with experience and interest in Google ADK, LlamaIndex and Vertex AI to create intelligent and automated solutions.</p>",
+    "summary": "<p class='leading-relaxed text-gray-600 dark:text-slate-50' style='margin-bottom:10px'>Backend engineer specialized in Python and FastAPI. Focused on AI engineering: I build RAG systems and agents with the Google ecosystem (Gemini, ADK, Vertex AI), with an emphasis on what takes them to production: quality evaluation, cost control, and security.</p>",
     "location": {
       "address": "",
       "postalCode": "",
@@ -549,6 +549,25 @@
   ],
   "projects": [
     {
+      "name": "Docwise",
+      "isActive": true,
+      "description": "Production RAG application to chat with your PDFs: ingestion and chunking with LlamaIndex, Gemini embeddings with pgvector similarity search, streaming answers (SSE), RAG quality evaluation with DeepEval, layered abuse protection (rate limiting + daily budgets), and CI/CD with GitHub Actions to Cloud Run.",
+      "highlights": [
+        "Python",
+        "FastAPI",
+        "Gemini",
+        "RAG",
+        "pgvector",
+        "PostgreSQL",
+        "DeepEval",
+        "Docker",
+        "Cloud Run",
+        "GitHub Actions",
+        "Next.js"
+      ],
+      "url": "https://docwise-web.vercel.app/"
+    },
+    {
       "name": "UmafeIP",
       "isActive": true,
       "description": "Website and clinical record system for a medical office in Campeche, Mexico.",
@@ -584,6 +603,7 @@
     {
       "name": "Clinical Records",
       "isActive": false,
+      "inProgress": true,
       "description": "Clinical record system for medical offices",
       "highlights": ["REACT", "FastAPI", "Astro", "Docker"],
       "url": ""

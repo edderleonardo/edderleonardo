@@ -6,7 +6,7 @@
     "email": "edderleonardo@gmail.com",
     "phone": "",
     "url": "",
-    "summary": "<p class='leading-relaxed text-gray-600 dark:text-slate-50' style='margin-bottom:10px'>Desarrollador Python con +6 años construyendo soluciones backend escalables con Django y FastAPI. Actualmente enfocado en el desarrollo de agentes AI, con experiencia e interés en Google ADK, LlamaIndex y Vertex AI para crear soluciones inteligentes y automatizadas.</p>",
+    "summary": "<p class='leading-relaxed text-gray-600 dark:text-slate-50' style='margin-bottom:10px'>Ingeniero backend especializado en Python y FastAPI. Enfocado en ingeniería de AI: construyo sistemas RAG y agentes con el ecosistema de Google (Gemini, ADK, Vertex AI), con énfasis en lo que los lleva a producción: evaluación de calidad, control de costos y seguridad.</p>",
     "location": {
       "address": "",
       "postalCode": "",
@@ -590,6 +590,25 @@
   ],
   "projects": [
     {
+      "name": "Docwise",
+      "isActive": true,
+      "description": "Aplicación RAG en producción para chatear con tus PDFs: ingesta y chunking con LlamaIndex, embeddings de Gemini con búsqueda vectorial en pgvector, respuestas en streaming (SSE), evaluación de calidad del RAG con DeepEval, protección contra abuso por capas (rate limiting + presupuestos diarios) y CI/CD con GitHub Actions hacia Cloud Run.",
+      "highlights": [
+        "Python",
+        "FastAPI",
+        "Gemini",
+        "RAG",
+        "pgvector",
+        "PostgreSQL",
+        "DeepEval",
+        "Docker",
+        "Cloud Run",
+        "GitHub Actions",
+        "Next.js"
+      ],
+      "url": "https://docwise-web.vercel.app/"
+    },
+    {
       "name": "UmafeIP",
       "isActive": true,
       "description": "Página web y sistema de expediente clínico para un consultorio médico en Campeche, México.",
@@ -625,6 +644,7 @@
     {
       "name": "Historial Clínico",
       "isActive": false,
+      "inProgress": true,
       "description": "Sistema de expediente clínico para consultorios médicos",
       "highlights": ["REACT", "FastAPI", "Astro", "Docker"],
       "url": ""

@@ -18,7 +18,7 @@ const sectionTitle = lang === "en" ? "Projects" : "Proyectos";
   <ul>
     {
       projects.map(
-        ({ url, description, highlights, name, isActive, github, }) => {
+        ({ url, description, highlights, name, isActive, inProgress, github, }) => {
           return (
             <li>
               <article>
@@ -36,6 +36,14 @@ const sectionTitle = lang === "en" ? "Projects" : "Proyectos";
                       name
                     )}
                     {isActive && <span>•</span>}
+                    {inProgress && (
+                      <span
+                        class="in-progress"
+                        title={lang === "en" ? "In progress" : "En progreso"}
+                      >
+                        •
+                      </span>
+                    )}
                     {github && (
                       <a
                         class="github-code-link"
@@ -107,6 +115,10 @@ const sectionTitle = lang === "en" ? "Projects" : "Proyectos";
     animation-duration: 3s;
     animation-timing-function: ease-in;
     animation-iteration-count: infinite;
+  }
+
+  article h3 span.in-progress {
+    color: rgb(245, 158, 11);
   }
 
   footer {
