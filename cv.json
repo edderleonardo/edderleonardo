@@ -642,12 +642,11 @@
       "url": "https://sebuscanproveedores.com/"
     },
     {
-      "name": "Historial Clínico",
-      "isActive": false,
-      "inProgress": true,
-      "description": "Sistema de expediente clínico para consultorios médicos",
-      "highlights": ["REACT", "FastAPI", "Astro", "Docker"],
-      "url": ""
+      "name": "SARA",
+      "isActive": true,
+      "description": "Plataforma en la nube para la gestión de consultorios médicos en México: expediente clínico, agenda de citas, generación de recetas y documentos en PDF con envío por WhatsApp, y plantillas por especialidad (Medicina General, Ginecología, Pediatría).",
+      "highlights": ["React", "Next.js", "FastAPI", "Docker"],
+      "url": "https://sarasalud.com.mx/"
     }
   ],
   "strengths": [

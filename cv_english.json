@@ -601,12 +601,11 @@
       "url": "https://sebuscanproveedores.com/"
     },
     {
-      "name": "Clinical Records",
-      "isActive": false,
-      "inProgress": true,
-      "description": "Clinical record system for medical offices",
-      "highlights": ["REACT", "FastAPI", "Astro", "Docker"],
-      "url": ""
+      "name": "SARA",
+      "isActive": true,
+      "description": "Cloud-based practice management platform for medical offices in Mexico: clinical records, appointment scheduling, prescription and document generation with WhatsApp delivery, and specialty-specific templates (General Medicine, Gynecology, Pediatrics).",
+      "highlights": ["React", "Next.js", "FastAPI", "Docker"],
+      "url": "https://sarasalud.com.mx/"
     }
   ],
   "strengths": [
