@@ -265,6 +265,12 @@
   ],
   "certificates": [
     {
+      "name": "Claude Certified Developer - Foundations",
+      "date": "2026",
+      "issuer": "Anthropic",
+      "url": "https://www.credly.com/badges/1b1072eb-0507-4492-a3e9-fcb985b4c342/linked_in_profile"
+    },
+    {
       "name": "Building with the Claude API",
       "date": "2026",
       "issuer": "Anthropic",
