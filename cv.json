@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Edder Ramírez",
-    "label": "Python Engineer | GDG Organizer",
+    "label": "AI & Data Engineer | Python | GDG Organizer",
     "image": "/me.webp",
     "email": "edderleonardo@gmail.com",
     "phone": "",
     "url": "",
-    "summary": "<p class='leading-relaxed text-gray-600 dark:text-slate-50' style='margin-bottom:10px'>Ingeniero backend especializado en Python y FastAPI. Enfocado en ingeniería de AI: construyo sistemas RAG y agentes con el ecosistema de Google (Gemini, ADK, Vertex AI), con énfasis en lo que los lleva a producción: evaluación de calidad, control de costos y seguridad.</p>",
+    "summary": "<p class='leading-relaxed text-gray-600 dark:text-slate-50' style='margin-bottom:10px'>Ingeniero de IA y datos especializado en Python. Construyo sistemas RAG y agentes con el ecosistema de Google (Gemini, ADK, Vertex AI) y los pipelines de datos que los alimentan: ETL, sincronización y limpieza de datos, y arquitectura en la nube (Cloud Run, Cloud SQL, Cloud Storage). Me enfoco en lo que lleva la IA a producción: calidad de los datos, evaluación, control de costos y seguridad.</p>",
     "location": {
       "address": "",
       "postalCode": "",
@@ -35,21 +35,22 @@
   "work": [
     {
       "name": "IM Digital",
-      "position": "Python Software Engineer",
+      "position": "Python Software Engineer (AI & Data)",
       "url": "https://www.imdigital.com/",
       "startDate": "2024",
       "endDate": "Actualmente",
-      "summary": "Python Engineer con experiencia práctica construyendo sistemas de IA listos para producción desde búsqueda semántica y descubrimiento visual de productos hasta asistentes multi-agente con Google ADK. Apasionado por convertir LLMs e infraestructura cloud en valor real para el negocio.",
+      "summary": "Integro modelos LLM (Gemini en Vertex AI) en productos reales de e-commerce y construyo los pipelines de datos que los alimentan: desde búsqueda semántica y descubrimiento visual de productos hasta asistentes multi-agente con Google ADK.",
       "highlights": [
         "Diseñé y construí sistemas RAG (Retrieval-Augmented Generation) con LlamaIndex, Vertex AI y PostgreSQL + pgvector para búsqueda semántica con streaming en tiempo real (SSE)",
+        "Desarrollé una prueba de concepto de etiquetado automático de productos con IA para una marca de belleza en Shopify: un backend en FastAPI recibe webhooks de productos y los procesa en segundo plano, detecta cambios contra PostgreSQL para evitar llamadas innecesarias al modelo y usa Gemini Vision (Vertex AI) para sugerir tags a partir de imágenes y descripciones. También genera texto ALT accesible para todas las imágenes de un producto en una sola llamada multimodal. Los tags y su estado se guardan en metafields de Shopify, y una app embebida en Shopify (React Router + Polaris) permite a los operadores revisarlos, editarlos y aprobarlos antes de aplicarlos vía GraphQL Admin API (human-in-the-loop)",
         "Desarrollé APIs de búsqueda visual de productos usando Google Vision AI y similitud vectorial (pgvector, Weaviate) para clientes de e-commerce en la industria joyera",
         "Construí asistentes de IA multi-agente con Google ADK y Gemini, orquestados mediante SequentialAgent con más de 8 FunctionTools asíncronas, gestión de estado compartido (ToolContext), instrucciones dinámicas y persistencia de sesiones en PostgreSQL con dashboards de administración para monitoreo de sesiones",
-        "Implementé sistemas de sincronización de datos de Shopify usando GraphQL Admin API con soporte multi-tenant, batch processing y versionado de datos históricos",
+        "Diseñé un pipeline ETL que integra datos de Microsoft Business Central (ERP) y Shopify en un catálogo unificado para un asistente de IA de un vivero: reglas de fuente de verdad por campo, limpieza y normalización canónica, cargas incrementales e idempotentes (UPSERT), y procesamiento por lotes en 3 fases que redujo las consultas de ~100 por producto a ~35 por lote. Implementé detección de cambios por hash de contenido para regenerar embeddings en Vertex AI solo cuando el contenido semántico cambia, procesados como jobs en segundo plano",
         "Contenerizé y desplegué microservicios en Google Cloud Run con Docker multi-stage builds, Cloud SQL y Cloud Storage"
       ],
       "skills": [
-        "BigQuery",
         "Cloud Run",
+        "Data Pipelines",
         "Docker",
         "ETL",
         "FastAPI",
@@ -60,12 +61,15 @@
         "GraphQL",
         "LlamaIndex",
         "LLM",
+        "Microsoft Business Central",
         "pgvector",
         "PostgreSQL",
         "Python",
         "RAG",
+        "React",
         "Shopify API",
-        "Vertex AI"
+        "Vertex AI",
+        "Webhooks"
       ]
     },
     {

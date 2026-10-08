@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Edder Ramírez",
-    "label": "Python Engineer | GDG Organizer",
+    "label": "AI & Data Engineer | Python | GDG Organizer",
     "image": "/me.webp",
     "email": "edderleonardo@gmail.com",
     "phone": "",
     "url": "",
-    "summary": "<p class='leading-relaxed text-gray-600 dark:text-slate-50' style='margin-bottom:10px'>Backend engineer specialized in Python and FastAPI. Focused on AI engineering: I build RAG systems and agents with the Google ecosystem (Gemini, ADK, Vertex AI), with an emphasis on what takes them to production: quality evaluation, cost control, and security.</p>",
+    "summary": "<p class='leading-relaxed text-gray-600 dark:text-slate-50' style='margin-bottom:10px'>AI & Data Engineer specialized in Python. I build RAG systems and agents with the Google ecosystem (Gemini, ADK, Vertex AI) and the data pipelines that feed them: ETL, data synchronization and cleaning, and cloud architecture (Cloud Run, Cloud SQL, Cloud Storage). I focus on what takes AI to production: data quality, evaluation, cost control, and security.</p>",
     "location": {
       "address": "",
       "postalCode": "",
@@ -35,21 +35,22 @@
   "work": [
     {
       "name": "IM Digital",
-      "position": "Python Software Engineer",
+      "position": "Python Software Engineer (AI & Data)",
       "url": "https://www.imdigital.com/",
       "startDate": "2024",
       "endDate": "Currently working",
-      "summary": "Python Engineer with hands-on experience building production-ready AI systems from semantic search and visual product discovery to multi-agent assistants with Google ADK. Passionate about turning LLMs and cloud infrastructure into real business value.",
+      "summary": "I integrate LLMs (Gemini on Vertex AI) into real e-commerce products and build the data pipelines that feed them: from semantic search and visual product discovery to multi-agent assistants with Google ADK.",
       "highlights": [
         "Designed and built RAG (Retrieval-Augmented Generation) systems with LlamaIndex, Vertex AI, and PostgreSQL + pgvector for semantic search with real-time streaming (SSE)",
+        "Built an AI-powered product tagging proof of concept for a beauty brand on Shopify: a FastAPI backend receives product webhooks and processes them in the background, detects changes against PostgreSQL to skip unnecessary model calls, and uses Gemini Vision (Vertex AI) to suggest tags from images and descriptions. It also generates accessible ALT text for all of a product's images in a single multimodal call. Tags and their status are stored in Shopify metafields, and an embedded Shopify app (React Router + Polaris) lets operators review, edit, and approve them before they're applied via the GraphQL Admin API (human-in-the-loop)",
         "Developed visual product search APIs using Google Vision AI and vector similarity (pgvector, Weaviate) for e-commerce clients in the jewelry industry",
         "Built multi-agent AI assistants with Google ADK and Gemini, orchestrated via SequentialAgent with 8+ async FunctionTools, shared state management (ToolContext), dynamic instructions, and PostgreSQL-backed session persistence with admin dashboards for session monitoring",
-        "Implemented Shopify data synchronization systems using GraphQL Admin API with multi-tenant support, batch processing, and historical data versioning",
+        "Designed an ETL pipeline that merges Microsoft Business Central (ERP) and Shopify data into a unified catalog for a plant nursery's AI assistant: per-field source-of-truth rules, canonical cleaning and normalization, incremental and idempotent loads (UPSERT), and a 3-phase batch processor that cut database queries from ~100 per product to ~35 per batch. Implemented content-hash change detection to regenerate Vertex AI embeddings only when semantic content changes, run as background jobs",
         "Containerized and deployed microservices to Google Cloud Run with Docker multi-stage builds, Cloud SQL, and Cloud Storage"
       ],
       "skills": [
-        "BigQuery",
         "Cloud Run",
+        "Data Pipelines",
         "Docker",
         "ETL",
         "FastAPI",
@@ -60,12 +61,15 @@
         "GraphQL",
         "LlamaIndex",
         "LLM",
+        "Microsoft Business Central",
         "pgvector",
         "PostgreSQL",
         "Python",
         "RAG",
+        "React",
         "Shopify API",
-        "Vertex AI"
+        "Vertex AI",
+        "Webhooks"
       ]
     },
     {
