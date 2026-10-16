@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Edder Ramírez",
-    "label": "AI & Data Engineer | Python | GDG Organizer",
+    "label": "Software Engineer | AI & Python | GDG Organizer",
     "image": "/me.webp",
     "email": "edderleonardo@gmail.com",
     "phone": "",
     "url": "",
-    "summary": "<p class='leading-relaxed text-gray-600 dark:text-slate-50' style='margin-bottom:10px'>Ingeniero de IA y datos especializado en Python. Construyo sistemas RAG y agentes con el ecosistema de Google (Gemini, ADK, Vertex AI) y los pipelines de datos que los alimentan: ETL, sincronización y limpieza de datos, y arquitectura en la nube (Cloud Run, Cloud SQL, Cloud Storage). Me enfoco en lo que lleva la IA a producción: calidad de los datos, evaluación, control de costos y seguridad.</p>",
+    "summary": "<p class='leading-relaxed text-gray-600 dark:text-slate-50' style='margin-bottom:10px'>Ingeniero de software especializado en Python, enfocado en construir sistemas de IA que funcionan en producción. Desarrollo sistemas RAG y agentes con el ecosistema de Google (Gemini, ADK, Vertex AI), junto con los pipelines de datos y la infraestructura en la nube que los sostienen: ETL, sincronización y limpieza de datos, Cloud Run, Cloud SQL y Cloud Storage. Me enfoco en lo que hace confiable a la IA en producción: calidad de datos, evaluación, control de costos y seguridad.</p>",
     "location": {
       "address": "",
       "postalCode": "",
