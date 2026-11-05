@@ -269,6 +269,12 @@
   ],
   "certificates": [
     {
+      "name": "Implement Load Balancing on Compute Engine Skill Badge",
+      "date": "2026",
+      "issuer": "Google",
+      "url": "https://www.credly.com/badges/08a1184d-7083-4031-b39c-e584105780b6/public_url"
+    },
+    {
       "name": "Claude Certified Developer - Foundations",
       "date": "2026",
       "issuer": "Anthropic",
