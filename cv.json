@@ -270,6 +270,12 @@
   ],
   "certificates": [
     {
+      "name": "Set Up an App Dev Environment on Google Cloud",
+      "date": "2026",
+      "issuer": "Google",
+      "url": "https://www.credly.com/badges/f574bad8-960e-470e-8bcc-b4b2334a89ef"
+    },
+    {
       "name": "Implement Load Balancing on Compute Engine Skill Badge",
       "date": "2026",
       "issuer": "Google",
