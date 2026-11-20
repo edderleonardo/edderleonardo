@@ -269,6 +269,12 @@
   ],
   "certificates": [
     {
+      "name": "Develop Your Google Cloud Network Skill Badge",
+      "date": "2026",
+      "issuer": "Google",
+      "url": "https://www.credly.com/badges/479eb159-f39e-4c20-b210-64a17307672f/public_url"
+    },
+    {
       "name": "Implement Cloud Security Fundamentals on Google Cloud Skill Badge",
       "date": "2026",
       "issuer": "Google",
