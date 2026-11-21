@@ -269,6 +269,12 @@
   ],
   "certificates": [
     {
+      "name": "Create Your First Gemini Enterprise Application",
+      "date": "2026",
+      "issuer": "Google",
+      "url": "https://www.credly.com/badges/90678b41-f745-46aa-88af-eee3b76c8d6d/public_url"
+    },
+    {
       "name": "Develop Your Google Cloud Network Skill Badge",
       "date": "2026",
       "issuer": "Google",
