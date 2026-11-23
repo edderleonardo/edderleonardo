@@ -270,6 +270,12 @@
   ],
   "certificates": [
     {
+      "name": "Build Infrastructure with Terraform on Google Cloud",
+      "date": "2026",
+      "issuer": "Google",
+      "url": "https://www.credly.com/badges/5475af4f-ec94-4547-ab38-b99b5c928c49/public_url"
+    },
+    {
       "name": "Create Your First Gemini Enterprise Application",
       "date": "2026",
       "issuer": "Google",
